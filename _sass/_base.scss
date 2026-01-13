@@ -4,6 +4,19 @@
 
 // Typography
 
+body {
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Serif 4", "Times New Roman", Times, serif;
+}
+
 p,
 h1,
 h2,
@@ -197,11 +210,16 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
-
+  // Text block below the profile image
   .more-info {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
+    margin: 0.35rem 0;
+    font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
 
     p {
       display: inline-block;
@@ -353,6 +371,78 @@ ul.task-list input[type="checkbox"] {
           color: var(--global-theme-color);
         }
       }
+    }
+  }
+
+  .navbar-topbar-socials {
+    margin-right: 0.5rem;
+
+    &__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.3rem;
+      color: var(--global-text-color);
+
+      i {
+        transition: color 0.2s ease-in-out;
+      }
+
+      &:hover {
+        color: var(--global-theme-color);
+
+        i {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+
+    &__link + &__link {
+      margin-left: 0.35rem;
+    }
+  }
+
+  .navbar-topbar-row {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .navbar-topbar-brand {
+    justify-self: start;
+    white-space: nowrap;
+  }
+
+  .navbar-topbar-menu {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-topbar-menu .navbar-toggler {
+    margin-right: 1rem;
+  }
+
+  .navbar-topbar-menu .navbar-collapse {
+    justify-content: center;
+  }
+
+  .navbar-topbar-socials-wrapper {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 767.98px) {
+    .navbar-topbar-menu {
+      justify-content: flex-end;
     }
   }
 }
@@ -594,6 +684,216 @@ footer.sticky-bottom {
 .post-title {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
+  }
+}
+
+.about-page {
+  .about-hero {
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+
+    .post-heading {
+      max-width: 820px;
+    }
+  }
+
+  .post-title {
+    font-size: clamp(2.5rem, 4vw, 3.4rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.35rem;
+  }
+
+  .tagline {
+    color: var(--global-text-color-light);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+
+  .about-article {
+    padding-bottom: 2.5rem;
+  }
+
+  .about-body {
+    max-width: 900px;
+    font-size: 1.04rem;
+    line-height: 1.75;
+    text-align: justify;
+    text-justify: inter-word;
+    .lead {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: var(--global-text-color);
+    }
+  }
+}
+
+.about-highlights {
+  margin: 2.25rem 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.highlight-card {
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 1.35rem 1.4rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--global-theme-color);
+  }
+
+  .highlight-label {
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    font-size: 0.7rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.55rem;
+  }
+
+  p + p {
+    margin-top: 0.45rem;
+  }
+}
+
+.principle-statement {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  font-size: clamp(1rem, 3vw, 1.45rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--global-text-color);
+
+  .principle-headline {
+    color: var(--global-text-color-light);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.85rem;
+    margin: 0;
+    margin-bottom: 0.35rem;
+    font-weight: 400;
+  }
+}
+
+.research-section,
+.industry-education-grid {
+  margin: 2.5rem 0 3rem;
+}
+
+.research-section {
+  .research-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .research-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
+.industry-education-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(250px, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.industry-box ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+
+  li {
+    line-height: 1.6;
+  }
+}
+
+.info-box {
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+
+  h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    margin-bottom: 0.35rem;
+    font-size: 1rem;
+    text-transform: none;
+  }
+}
+
+.box-note {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+}
+
+.interest-group {
+  ul {
+    margin: 0 0 1rem 1rem;
+    padding-left: 0.25rem;
+
+    li {
+      margin-bottom: 0.35rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+.education-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  li {
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+    }
+
+    span {
+      font-size: 0.95rem;
+      color: var(--global-text-color-light);
+    }
   }
 }
 
