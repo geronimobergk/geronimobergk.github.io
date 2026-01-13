@@ -1,6 +1,9 @@
 {% assign topbar_socials = site.data.socials %}
 {% if topbar_socials %}
-  {% assign has_topbar_socials = topbar_socials.linkedin_username or topbar_socials.scholar_userid or topbar_socials.github_username or topbar_socials.email %}
+  {% assign has_topbar_socials = topbar_socials.linkedin_username
+    or topbar_socials.scholar_userid
+    or topbar_socials.github_username
+    or topbar_socials.email %}
 
   {% if has_topbar_socials %}
     <div class="navbar-topbar-socials d-none d-md-flex align-items-center">
