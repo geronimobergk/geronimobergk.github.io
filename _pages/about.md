@@ -10,7 +10,7 @@ profile:
   image: prof_pic_color.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Managing Consultant – Data Science, Horváth AG (Munich)</p>
+    <p>Managing Consultant – Data Science, Horváth AG, Munich</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<p class="lead">I work on machine learning systems that must operate under hard real-world constraints, such as limited energy, data, and compute, while remaining reliable and scientifically meaningful in deployment. My focus is translating learning algorithms into deployable systems, where robustness, evaluation rigor, and system integration matter more than peak benchmark performance.</p>
+<p>I work on machine learning systems that must operate under hard real-world constraints, such as limited energy, data, and compute, while remaining reliable and scientifically meaningful in deployment. My focus is translating learning algorithms into deployable systems, where robustness, evaluation rigor, and system integration matter more than peak benchmark performance.</p>
 
 <p>I am currently a Managing Consultant in Data Science at Horváth AG, where I design and deploy data-driven decision systems in large-scale enterprise environments. Previously, I was a Research Associate at the Fraunhofer Heinrich Hertz Institute, working on machine-learning-based forecasting, telemetry, and control for communication systems under operational constraints. There, I developed reproducible simulation tools and large-scale datasets for optical networks, integrated learning components into real-time system demonstrators, and contributed to benchmark-driven evaluation pipelines. This work resulted in seven peer-reviewed publications at leading venues and was recognized with the Fraunhofer HHI Emerging Scientist Award for an outstanding master’s thesis.</p>
 

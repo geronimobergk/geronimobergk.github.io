@@ -207,18 +207,16 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Profile
-
 .profile {
   width: 100%;
   // Text block below the profile image
   .more-info {
     margin: 0.35rem 0;
     font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-style: italic;
     line-height: 1.4;
-    text-transform: uppercase;
     color: var(--global-text-color-light);
 
     p {
@@ -708,7 +706,7 @@ footer.sticky-bottom {
   .tagline {
     color: var(--global-text-color-light);
     text-transform: uppercase;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     font-size: 0.85rem;
     margin-bottom: 0;
   }
