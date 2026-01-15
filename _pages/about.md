@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: AI systems under real-world constraints | communication & sensing systems
+subtitle: AI systems under real-world constraints for decision, communication, and sensing systems
 selected_papers: false
 social: false
 profile:
@@ -35,43 +35,43 @@ latest_posts:
   <p>I am driven by a system-level perspective that fixes real deployment constraints early, investigates effects isolated in controlled experiments, and judges learning systems by robustness, efficiency, and operability.</p>
 </section>
 
-<section class="research-section">
-  <article class="info-box research-box">
-    <h3>Research interests</h3>
-    <ul>
-      <li>Resource-aware and energy-efficient machine learning for embedded and edge systems</li>
-      <li>Edge AI and TinyML for embedded sensing systems</li>
-      <li>Representation learning under fixed deployment constraints (energy, memory, data)</li>
-      <li>Evaluation protocols, robustness, and reproducibility in real-world ML systems</li>
-      <li>Human-centered sensing with wearables and physiological signals (e.g., biosignals)</li>
-      <li>Edge intelligence for communication-constrained and wireless sensing systems</li>
-      <li>Edge–cloud co-design for long-term, large-scale monitoring applications</li>
-    </ul>
-  </article>
-</section>
+<div class="about-listings">
+  <div class="about-columns">
+    <section class="info-box">
+      <h3>Research interests</h3>
+      <ul>
+        <li>Resource-aware and energy-efficient machine learning for embedded and edge systems</li>
+        <li>Edge AI and TinyML for embedded sensing systems</li>
+        <li>Representation learning under fixed deployment constraints (energy, memory, data)</li>
+        <li>Evaluation protocols, robustness, and reproducibility in real-world ML systems</li>
+        <li>Human-centered sensing with wearables and physiological signals (e.g., biosignals)</li>
+        <li>Edge intelligence for communication-constrained and wireless sensing systems</li>
+        <li>Edge–cloud co-design for long-term, large-scale monitoring applications</li>
+      </ul>
+    </section>
 
-<section class="industry-education-grid">
-  <article class="info-box industry-box">
-    <h3>Industry experience</h3>
-    <ul>
-      <li>Design and deployment of data-driven decision systems in finance and operations under strict reliability, auditability, and governance requirements</li>
-      <li>Large-scale forecasting and simulation pipelines operating under uncertainty, incomplete data, and real-time constraints</li>
-      <li>Generative-AI–based reporting systems for executive decision-making, with emphasis on interpretability, traceability, and failure modes</li>
-      <li>Machine learning systems with strong requirements on robustness, interpretability, and organizational accountability</li>
-    </ul>
-  </article>
+    <section class="info-box">
+      <h3>Industry practice</h3>
+      <ul>
+        <li>Design and deployment of data-driven decision systems in finance and operations under strict reliability, auditability, and governance requirements</li>
+        <li>Large-scale forecasting and simulation pipelines operating under uncertainty, incomplete data, and real-time constraints</li>
+        <li>Generative-AI–based reporting systems for executive decision-making, with emphasis on interpretability, traceability, and failure modes</li>
+        <li>Machine learning systems with strong requirements on robustness, interpretability, and organizational accountability</li>
+      </ul>
+    </section>
+  </div>
 
-  <article class="info-box education-box">
+  <section class="info-box">
     <h3>Education</h3>
     <ul class="education-list">
       <li>
-        <strong>M.Sc. Electrical Engineering, 2021</strong>
+        M.Sc. Electrical Engineering, 2021
         <span>Technische Universität Berlin</span>
       </li>
       <li>
-        <strong>B.Sc. Electrical Engineering, 2017</strong>
+        B.Sc. Electrical Engineering, 2017
         <span>Technische Universität Berlin</span>
       </li>
     </ul>
-  </article>
-</section>
+  </section>
+</div>
