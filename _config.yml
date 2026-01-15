@@ -200,7 +200,6 @@ exclude:
   - _pages/blog.md # TODO
   - _pages/projects.md # TODO
   - _pages/teaching.md # TODO
-  - _pages/publications.md # TODO
   - _pages/cv.md
   - _pages/dropdown.md
   - _pages/news.md
