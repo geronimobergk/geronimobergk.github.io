@@ -20,6 +20,7 @@ nav_order: 2
 {% bibliography --group_by year --group_order descending --query @inproceedings[selected=true]* %}
 
 <h1>Book Chapters</h1>
+
 <div class="post-description">Invited and professional contributions</div>
 
 {% bibliography --group_by year --group_order descending --query @inbook[selected=true]* %}
