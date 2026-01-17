@@ -7,10 +7,15 @@ selected_papers: false
 social: false
 profile:
   align: right
-  image: prof_pic_color.jpg
-  image_circular: false # crops the image to make it circular
+  #image: prof_pic_color_no_background_square.png
+  image: prof_pic_color_no_background_square.png
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Managing Consultant – Data Science, Horváth AG, Munich</p>
+    <p>
+      <span class="profile-role">Managing Consultant – Data Science</span>
+      <span class="profile-divider"></span>
+      <span class="profile-org">Horváth AG, Munich</span>
+    </p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page

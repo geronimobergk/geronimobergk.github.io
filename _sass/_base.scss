@@ -250,17 +250,43 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin: 0.35rem 0;
     font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.9rem;
-    font-weight: 300;
-    font-style: italic;
-    line-height: 1.4;
+    font-size: 0.7rem;
+    line-height: 1.2;
     color: var(--global-text-color-light);
-
+    margin-top: 0.7rem;
+    text-align: center;
     p {
       display: inline-block;
       margin: 0;
     }
   }
+}
+
+.about-page .profile.card {
+  background-color: var(--global-card-bg-color);
+  border: 0.2px solid var(--global-divider-color);
+  border-radius: 0px;
+  padding: 0.75rem 0.9rem 1.15rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.about-page .profile.card img {
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+
+.about-page .profile .profile-role,
+.about-page .profile .profile-org {
+  display: block;
+}
+
+.about-page .profile .profile-divider {
+  display: block;
+  width: 50px;
+  margin: 0.45rem auto;
+  border-top: 1px solid var(--global-divider-color);
 }
 
 .profile.float-right {

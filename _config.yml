@@ -13,7 +13,7 @@ footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> (<a href="https://github.com/alshedivat/al-folio">al-folio</a>).
 keywords: applied-ai, data-science, decision-systems, simulation-systems, research-translation
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: G # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://geronimobergk.github.io # the base hostname & protocol for your site
 baseurl: / # the subpath of your site, e.g. /blog/. Leave blank for root
