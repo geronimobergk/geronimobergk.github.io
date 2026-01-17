@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Listed chronologically
+description: Peer-reviewed scholarly work
 nav: true
 nav_order: 2
 ---
@@ -19,7 +19,8 @@ nav_order: 2
 
 {% bibliography --group_by year --group_order descending --query @inproceedings[selected=true]* %}
 
-<h2>Book Chapters</h2>
+<h1>Book Chapters</h1>
+<div class="post-description">Invited and professional contributions</div>
 
 {% bibliography --group_by year --group_order descending --query @inbook[selected=true]* %}
 </div>
