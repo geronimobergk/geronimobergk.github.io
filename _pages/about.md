@@ -17,9 +17,6 @@ profile:
       <span class="profile-role">Geronimo Bergk</span>
       <span class="profile-divider"></span>
       <span class="profile-org">Applied Machine Learning & Edge AI Systems</span>
-      <span class="profile-divider"></span>
-      <span class="profile-org">Munich, Germany</span>
-
     </p>
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page

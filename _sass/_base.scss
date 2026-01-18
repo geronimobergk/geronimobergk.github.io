@@ -273,7 +273,9 @@ ul.task-list input[type="checkbox"] {
 
 .about-page .profile.card img {
   box-shadow: none !important;
-  border: 0.2px !important;
+  border: 0 !important;
+  max-width: 80%;
+  height: auto;
 }
 
 
@@ -777,6 +779,7 @@ footer.sticky-bottom {
 .principle-statement {
   margin: 2rem 0;
   padding: 1rem 0;
+  display: flow-root;
   border-top: 1px solid var(--global-divider-color);
   border-bottom: 1px solid var(--global-divider-color);
   font-size: clamp(1rem, 2.6vw, 1.3rem);
