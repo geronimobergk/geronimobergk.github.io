@@ -250,17 +250,45 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin: 0.35rem 0;
     font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.9rem;
-    font-weight: 300;
-    font-style: italic;
-    line-height: 1.4;
+    font-size: 0.7rem;
+    line-height: 1.2;
     color: var(--global-text-color-light);
-
+    margin-top: 0.7rem;
+    text-align: center;
     p {
       display: inline-block;
       margin: 0;
     }
   }
+}
+
+.about-page .profile.card {
+  background-color: var(--global-card-bg-color);
+  border: 0.5px solid var(--global-divider-color);
+  border-radius: 5px;
+  padding: 1.3rem 1.3rem 1.3rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.about-page .profile.card img {
+  box-shadow: none !important;
+  border: 0 !important;
+  max-width: 80%;
+  height: auto;
+}
+
+
+.about-page .profile .profile-role,
+.about-page .profile .profile-org {
+  display: block;
+}
+
+.about-page .profile .profile-divider {
+  display: block;
+  width: 50px;
+  margin: 0.45rem auto;
+  border-top: 1px solid var(--global-divider-color);
 }
 
 .profile.float-right {
@@ -751,6 +779,7 @@ footer.sticky-bottom {
 .principle-statement {
   margin: 2rem 0;
   padding: 1rem 0;
+  display: flow-root;
   border-top: 1px solid var(--global-divider-color);
   border-bottom: 1px solid var(--global-divider-color);
   font-size: clamp(1rem, 2.6vw, 1.3rem);
@@ -1002,13 +1031,11 @@ footer.sticky-bottom {
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
-    text-align: center;
     margin-top: 1em;
-    margin-bottom: 1em;
   }
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 
     span {
       font-size: 1.5rem;

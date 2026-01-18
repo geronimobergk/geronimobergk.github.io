@@ -4,6 +4,9 @@ layout: default
 <div class="post about-page">
   <header class="post-header about-hero">
     <div class="post-heading">
+    {% if page.heading %}
+      <h1 class="post-title">{{ page.heading }}</h1>
+    {% else %}
       <h1 class="post-title">
         {% if site.title == 'blank' %}
           <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
@@ -12,6 +15,7 @@ layout: default
           {{ site.title }}
         {% endif %}
       </h1>
+    {% endif %}
     </div>
     {% if page.subtitle %}
       <p class="tagline">{{ page.subtitle }}</p>
@@ -20,7 +24,9 @@ layout: default
 
   <article class="about-article">
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div
+        class="profile {% if page.profile.card %} card hoverable{% endif %} float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}"
+      >
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
