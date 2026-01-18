@@ -10,6 +10,7 @@ profile:
   #image: prof_pic_color_no_background_square.png
   image: prof_pic_color_no_background_square.png
   image_circular: true # crops the image to make it circular
+  card: true # Renders the profile image and additional information together within a styled card component.
   more_info: >
     <p>
       <span class="profile-role">Managing Consultant – Data Science</span>

@@ -20,7 +20,9 @@ layout: default
 
   <article class="about-article">
     {% if page.profile %}
-      <div class="profile card hoverable float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div
+        class="profile {% if page.profile.boxed %} card hoverable{% endif %} float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}"
+      >
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}

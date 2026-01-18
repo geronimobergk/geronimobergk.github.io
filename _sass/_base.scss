@@ -265,7 +265,7 @@ ul.task-list input[type="checkbox"] {
 .about-page .profile.card {
   background-color: var(--global-card-bg-color);
   border: 0.2px solid var(--global-divider-color);
-  border-radius: 0px;
+  border-radius: 3px;
   padding: 0.75rem 0.9rem 1.15rem;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   text-align: center;
@@ -273,7 +273,7 @@ ul.task-list input[type="checkbox"] {
 
 .about-page .profile.card img {
   box-shadow: none !important;
-  border: 0 !important;
+  border: 0.2px !important;
 }
 
 
