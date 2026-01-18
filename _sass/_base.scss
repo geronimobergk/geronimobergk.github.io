@@ -284,6 +284,15 @@ ul.task-list input[type="checkbox"] {
   display: block;
 }
 
+.about-page .profile .profile-role {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  color: var(--global-text-color);
+}
+
 .about-page .profile .profile-divider {
   display: block;
   width: 50px;
@@ -316,13 +325,16 @@ ul.task-list input[type="checkbox"] {
 }
 
 .tagline,
-.post-description {
-  color: var(--global-text-color-light);
+.post-description,
+.about-page .profile .profile-org,
+.principle-headline,
+.info-box h3{
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  color: var(--global-text-color-light);
   font-size: 0.8rem;
-  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.5;
   margin: 0;
 
   a {
@@ -390,7 +402,12 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    font-size: 1.5rem;
   }
+
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
@@ -796,19 +813,6 @@ footer.sticky-bottom {
   }
 }
 
-.principle-headline,
-.info-box h3 {
-  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--global-text-color-light);
-}
-
-.principle-headline {
-  margin: 0;
-}
 
 .about-listings {
   max-width: 860px;
