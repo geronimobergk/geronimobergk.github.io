@@ -2,22 +2,25 @@
 layout: about
 title: About
 permalink: /
-subtitle: AI systems under real-world constraints for decision, communication, and sensing systems
+heading: Designing Reliable AI Systems Under Real World Constraints
+subtitle: For decision, communication, and sensing applications
 selected_papers: false
 social: false
 profile:
   align: right
   #image: prof_pic_color_no_background_square.png
-  image: prof_pic_color_no_background_square.png
+  image: prof_pic_color_square.png
   image_circular: true # crops the image to make it circular
   card: true # Renders the profile image and additional information together within a styled card component.
   more_info: >
     <p>
-      <span class="profile-role">Managing Consultant – Data Science</span>
+      <span class="profile-role">Geronimo Bergk</span>
       <span class="profile-divider"></span>
-      <span class="profile-org">Horváth AG, Munich</span>
-    </p>
+      <span class="profile-org">Applied Machine Learning & Edge AI Systems</span>
+      <span class="profile-divider"></span>
+      <span class="profile-org">Munich, Germany</span>
 
+    </p>
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
