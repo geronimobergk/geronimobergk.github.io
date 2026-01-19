@@ -1,14 +1,16 @@
 ---
 layout: page
 title: Self-Supervised Temporal Representation Learning for Energy-Efficient sEMG Gesture Decoding
-description: Independent Research Project | Proof-of-Thinking | Edge AI • Neuroengineering • Wearable Computing
+description: Resource-Constrained Machine Learning
 importance: 1
-img: assets/img/12.jpg
+img: assets/img/thumbnail/project/2026_ssl_msm_semg_gesture_decoding.jpeg
 category: research
 related_publications: false
 ---
 
-Status: Ongoing (implementation in progress)
+**Role:** Independent
+
+**Status:** Ongoing (implementation in progress)
 
 ---
 
@@ -35,6 +37,7 @@ Can self-supervised pretraining improve the quality of temporal representations 
 For a fixed tiny encoder architecture and a fixed inference budget, introducing self-supervised learning during pretraining improves:
 
 **(a)** cross-subject representation quality
+
 **(b)** label-efficient user adaptation
 
 compared to purely supervised training, while leaving deployment cost unchanged.
@@ -100,7 +103,7 @@ More broadly, the project aims to position self-supervised learning as a represe
 
 ---
 
-## Expected Artifacts
+## Artifacts
 
 The planned outputs emphasize auditability and system relevance rather than polished benchmarks:
 

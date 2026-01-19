@@ -3,7 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 heading: Project Overview
-description: Selected research and system-oriented projects.
+description: Selected research and system-oriented projects
 nav: true
 nav_order: 3
 display_categories: [research, professional]
