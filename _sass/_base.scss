@@ -328,11 +328,12 @@ ul.task-list input[type="checkbox"] {
 .post-description,
 .about-page .profile .profile-org,
 .principle-headline,
-.info-box h3{
+.info-box h3,
+.card-text {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   color: var(--global-text-color-light);
   font-size: 0.8rem;
   margin: 0;
