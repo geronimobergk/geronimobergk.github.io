@@ -1,4 +1,3 @@
-
 Brain–Computer Interfacing
 Discriminatory Analysis of Source Dipoles of Somatosensory Evoked Potentials
 Research Project Module (M.Sc.) · Technische Universität Berlin · Prof. Benjamin Blankertz’ Lab

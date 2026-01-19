@@ -37,4 +37,4 @@ The work emphasizes deployment-oriented experimental discipline: protocol-aware 
 
 ## Key Takeaway
 
-*In applied wearable ML, evaluation protocol choice is a design decision that can fundamentally change which models appear deployable.*
+_In applied wearable ML, evaluation protocol choice is a design decision that can fundamentally change which models appear deployable._

@@ -10,7 +10,6 @@ category: fun
 **Role:** Master's Student
 **Status:** Completed
 
-
 ### Problem
 
 Somatosensory evoked potentials (SSEPs) are a well-established tool for probing early cortical processing following peripheral nerve stimulation and are widely used in clinical neurophysiology. While the temporal characteristics of prominent components such as the **N20** (median nerve) and **P37** (tibial nerve) are well understood, the **reliability and discriminability of their cortical source localization across different stimulus locations** remains insufficiently characterized. In particular, it is unclear to what extent standard EEG setups and established dipole localization methods can robustly distinguish first cortical processing for different limb and finger stimulations under realistic experimental constraints.

@@ -24,4 +24,5 @@ nav_order: 2
 <div class="post-description">Invited and professional contributions</div>
 
 {% bibliography --group_by year --group_order descending --query @inbook[selected=true]* %}
+
 </div>
