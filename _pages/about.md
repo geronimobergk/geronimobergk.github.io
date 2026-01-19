@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 heading: Designing Reliable AI Systems Under Real World Constraints
-subtitle: For decision, communication, and sensing applications
+description: For decision, communication, and sensing applications
 selected_papers: false
 social: false
 profile:
