@@ -198,7 +198,6 @@ exclude:
   - _pages/about_einstein.md
   - _pages/books.md
   - _pages/blog.md # TODO
-  - _pages/projects.md # TODO
   - _pages/teaching.md # TODO
   - _pages/cv.md
   - _pages/dropdown.md

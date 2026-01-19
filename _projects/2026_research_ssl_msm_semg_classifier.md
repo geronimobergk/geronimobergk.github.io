@@ -49,6 +49,7 @@ The project is designed as a causally controlled study intended to isolate the r
 
 Encoder architecture, optimization budget, and inference cost are held constant across all experimental variants.
 Self-supervised learning is introduced as a single, explicit intervention via masked signal modeling during pretraining.
+Masked signal modeling is used as a lightweight self-supervised pretraining strategy to isolate the effect of representation learning under fixed system budgets, whereas contrastive SSL is deliberately excluded due to its additional training dependencies that could confound causal interpretation in resource-constrained settings.
 
 Representation quality is evaluated using frozen encoders and linear probes, as well as low-data adaptation scenarios, to decouple representational effects from classifier capacity or fine-tuning flexibility.
 This design explicitly avoids confounding improvements in representation learning with changes in model size, training compute, or inference complexity.

@@ -1,11 +1,12 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+heading: Project Overview
+description: Selected research and system-oriented projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [research, professional]
 horizontal: false
 ---
 
