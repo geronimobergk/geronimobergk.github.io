@@ -35,7 +35,6 @@ Can self-supervised pretraining improve the quality of temporal representations 
 For a fixed tiny encoder architecture and a fixed inference budget, introducing self-supervised learning during pretraining improves:
 
 **(a)** cross-subject representation quality
-
 **(b)** label-efficient user adaptation
 
 compared to purely supervised training, while leaving deployment cost unchanged.
@@ -73,16 +72,28 @@ The goal is to assess whether SSL meaningfully alters representation behavior un
 
 This project is intended to clarify whether and how self-supervised learning can be leveraged as a system-compatible tool for improving representation learning in resource-constrained settings.
 
-If the hypothesis holds, the implication is that representation quality can be improved without increasing capacity or inference cost.
-This would suggest that SSL can be used to extract more transferable structure from unlabeled data within an unchanged system envelope.
+If the hypothesis holds, the implication is not that model capacity becomes irrelevant, but that representation learning can be made more efficient within a fixed system envelope.
+In practice, this would position self-supervised pretraining as a system-compatible tool for improving robustness and label efficiency in settings where increasing model size, latency, or energy consumption is not feasible.
 
-Such an outcome would be particularly relevant for edge AI applications where:
+While the study is grounded in wearable sEMG gesture decoding (NinaPro DB2), the underlying question and methodology are relevant to a broader class of resource-constrained edge AI applications that share similar structural properties:
 
-* Models must generalize across users, devices, or environments
-* Labeled data is scarce or expensive to obtain
-* Energy, latency, and memory budgets are fixed at deployment
+* temporal sensor data,
+* strong domain or subject variability,
+* limited labeled data,
+* and fixed inference budgets.
 
-Beyond sEMG gesture recognition, this perspective applies to a wide range of sensor-driven edge systems, including wearable health monitoring, inertial sensing, bioacoustics, environmental sensing, and other human-centric or infrastructure-embedded AI applications.
+These include, but are not limited to:
+
+* wearable health monitoring
+* inertial and motion sensing
+* embedded bioacoustics
+* structural and environmental sensor networks
+* neurotechnology
+* and other TinyML or always-on edge sensing systems.
+
+At the same time, it is important to emphasize that signal characteristics, data distributions, and deployment contexts differ substantially across applications.
+Any transfer of insights beyond sEMG—and beyond the specific properties of NinaPro DB2—requires independent empirical verification.
+The expected outcome of this project is therefore not a general-purpose solution, but a principled indication of when and why self-supervised learning may improve representations under fixed deployment constraints.
 
 More broadly, the project aims to position self-supervised learning as a representation efficiency mechanism, rather than a capacity-increasing strategy, within realistic embedded ML pipelines.
 
