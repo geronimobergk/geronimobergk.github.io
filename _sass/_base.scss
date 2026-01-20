@@ -814,6 +814,83 @@ footer.sticky-bottom {
   }
 }
 
+.project {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-content {
+  text-align: left;
+}
+
+.project-content h2,
+.project-content h3 {
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  margin: 2.2rem 0 0.65rem;
+}
+
+.project-content h2:first-child,
+.project-content h3:first-child {
+  margin-top: 0;
+}
+
+.project-summary,
+.project-takeaway {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem;
+}
+
+.project-summary {
+  background-color: var(--global-card-bg-color);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2.5rem;
+}
+
+.project-summary h2,
+.project-summary h3,
+.project-takeaway h2,
+.project-takeaway h3 {
+  margin-top: 0;
+}
+
+.project-summary p {
+  margin: 0 0 0.85rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.project-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.project-takeaway {
+  background-color: var(--global-code-bg-color);
+  border-left: 3px solid var(--global-theme-color);
+  margin-top: 2.5rem;
+}
+
+.project-takeaway p {
+  margin: 0 0 0.75rem;
+}
+
+.project-takeaway p:last-child {
+  margin-bottom: 0;
+}
+
+.project-columns {
+  margin: 2.5rem 0;
+}
+
+.project-columns .info-box {
+  margin: 0;
+}
+
 .about-body {
   max-width: 900px;
   text-align: justify;
@@ -894,6 +971,48 @@ footer.sticky-bottom {
 
 .about-listings li::before {
   content: "\2013";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: var(--global-text-color-light);
+}
+
+.project-content ul,
+.project-content ol {
+  margin: 0;
+  padding-left: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.project-content li {
+  margin: 0.35rem 0;
+  line-height: 1.55;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.project-content li::before {
+  content: "\2013";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: var(--global-text-color-light);
+}
+
+.project-content ol.roman-list {
+  counter-reset: roman;
+  margin: 0;
+  padding-left: 0;
+}
+
+.project-content ol.roman-list > li {
+  padding-left: 2rem;
+}
+
+.project-content ol.roman-list > li::before {
+  content: "(" counter(roman, lower-roman) ")";
+  counter-increment: roman;
   position: absolute;
   left: 0;
   top: 0.05em;
