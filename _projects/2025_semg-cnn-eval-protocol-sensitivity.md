@@ -15,6 +15,8 @@ github: https://github.com/geronimobergk/semg-protocol-sensitivity
   <p>Under tightly controlled conditions, the study demonstrates that changing the evaluation protocol alone—without modifying architecture, training budget, or optimization—can induce performance drops exceeding 50% and reverse model rankings. These results establish protocol sensitivity as a first-order methodological concern for scientific validity and deployment relevance in wearable and human-centered ML systems.</p>
 </section>
 
+<div class="section-divider"></div>
+
 ## Problem
 
 Performance comparisons in sEMG-based gesture recognition are difficult to interpret—not because models are poorly designed, but because evaluation protocols probe fundamentally different generalization regimes.
@@ -27,6 +29,8 @@ As sEMG systems move toward wearable, human-facing deployment, this mismatch bet
 
 How sensitive are CNN-based sEMG gesture recognition results to evaluation protocol choice, and to what extent can protocol-induced effects dominate absolute performance and apparent architectural improvements?
 
+<div class="section-divider"></div>
+
 ## Hypothesis
 
 For fixed architectures, training budgets, and optimization settings, evaluation protocol choice alone accounts for the majority of observed performance differences, including:
@@ -37,6 +41,8 @@ For fixed architectures, training budgets, and optimization settings, evaluation
 </ol>
 
 Observed ranking changes are therefore attributable to protocol-induced generalization effects rather than model expressiveness.
+
+<div class="section-divider"></div>
 
 <div class="about-columns project-columns">
   <section class="info-box">
@@ -64,6 +70,8 @@ Observed ranking changes are therefore attributable to protocol-induced generali
   </section>
 </div>
 
+<div class="section-divider"></div>
+
 ## Key Findings
 
 The results reveal three decisive effects:
@@ -79,6 +87,8 @@ The results reveal three decisive effects:
 
 These effects arise despite identical architectures, training budgets, and optimization, confirming protocol sensitivity as a first-order determinant of reported results.
 
+<div class="section-divider"></div>
+
 ## Implications
 
 This study establishes protocol sensitivity as a prerequisite consideration for scientific validity and deployment relevance in sEMG research.
@@ -86,6 +96,8 @@ This study establishes protocol sensitivity as a prerequisite consideration for 
 Architectural improvements observed under subject-dependent protocols do not reliably translate to unseen users. Without explicit protocol alignment, reported gains risk being scientifically misleading and operationally irrelevant.
 
 While grounded in sEMG gesture recognition (NinaPro DB2), the findings generalize to other biosignal and wearable sensing domains characterized by strong inter-user variability, including EMG, EEG, and physiological monitoring.
+
+<div class="section-divider"></div>
 
 ## Artifacts
 
@@ -96,6 +108,8 @@ The project provides a reproducible, protocol-aware reference setup:
 - Clear documentation of evaluation logic and design trade-offs
 
 The artifacts serve as a methodological foundation for subsequent work on representation learning, label-efficient adaptation, and protocol-aware evaluation.
+
+<div class="section-divider"></div>
 
 <section class="project-takeaway">
   <h2>Key Takeaway</h2>

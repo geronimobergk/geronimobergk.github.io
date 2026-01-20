@@ -891,6 +891,12 @@ footer.sticky-bottom {
   margin: 0;
 }
 
+.section-divider {
+  border-top: 1px solid var(--global-divider-color);
+  height: 0.35rem;
+  margin: 1.6rem 0 0.55rem;
+}
+
 .about-body {
   max-width: 900px;
   text-align: justify;
