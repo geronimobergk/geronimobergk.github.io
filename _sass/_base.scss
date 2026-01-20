@@ -319,13 +319,16 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.post-header {
+.post-header,
+.project-header {
   margin-bottom: 1.5rem;
 }
 
 .post-description,
+.project-description,
 .about-page .profile .profile-org,
 .principle-headline,
+.project-section-headline,
 .info-box h3,
 .card .card-body .card-text {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
@@ -791,6 +794,17 @@ footer.sticky-bottom {
 
 .post-title {
   font-size: clamp(2.2rem, 3.6vw, 3.1rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.35rem;
+
+  mjx-container[jax="CHTML"][display="true"] {
+    display: unset;
+  }
+}
+
+.project-title {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
   font-weight: 600;
   letter-spacing: -0.015em;
   margin-bottom: 0.35rem;

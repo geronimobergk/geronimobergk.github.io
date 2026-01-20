@@ -1,17 +1,14 @@
 ---
-layout: page
+layout: project
 title: Evaluation Protocols Matter - Protocol Sensitivity in sEMG CNN Evaluation
 description: Methodologically Grounded Machine Learning
 importance: 2
 category: research
+img: assets/img/thumbnail/project/2025_semg-cnn-eval-protocol-sensitivity.png
 related_publications: true
+github: https://github.com/geronimobergk/semg-protocol-sensitivity
 ---
 
-**Role**: Independent Research Project
-
-**Status**: Completed
-
----
 
 ## Summary
 

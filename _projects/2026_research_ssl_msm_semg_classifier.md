@@ -1,20 +1,13 @@
 ---
-layout: project-page
+layout: project
 title: Self-Supervised Temporal Representation Learning for Energy-Efficient sEMG Gesture Decoding
 description: Resource-Constrained Machine Learning
 importance: 1
 img: assets/img/thumbnail/project/2026_ssl_msm_semg_gesture_decoding.jpeg
 category: research
 related_publications: false
+github: https://github.com/geronimobergk/tiny-ssl-semg
 ---
-
-**Role:** Independent
-
-**Status:** Ongoing
-
----
-
-## Summary
 
 This project investigates whether self-supervised learning can improve representation quality in wearable sEMG gesture recognition under strict energy and compute constraints.
 
@@ -22,15 +15,15 @@ Rather than increasing model size or training complexity, the study isolates sel
 The goal is to understand when and why representation learning improves robustness and label efficiency within fixed deployment budgets, as required by real-world wearable and edge AI systems.
 
 ---
+<p class="project-section-headline">Problem</p>
 
-## Problem
+  <p>Wearable sEMG gesture recognition systems often underperform in real-world deployment — not because models are too small, but because learned representations degrade under strong inter-subject variability, scarce personalization data, and strict energy and compute constraints.</p>
 
-Wearable sEMG gesture recognition systems often underperform in real-world deployment — not because models are too small, but because learned representations degrade under strong inter-subject variability, scarce personalization data, and strict energy and compute constraints.
+  <p>In embedded systems, increasing model capacity or training complexity is rarely feasible. Performance is therefore limited by how much transferable structure a model can extract from limited data under a fixed inference budget.</p>
 
-In embedded systems, increasing model capacity or training complexity is rarely feasible. Performance is therefore limited by how much transferable structure a model can extract from limited data under a fixed inference budget.
+  <p>While self-supervised learning (SSL) has shown promise for biosignal modeling, many existing studies rely on increased model capacity, relaxed compute budgets, or large-scale pretraining.</p>
 
-While self-supervised learning (SSL) has shown promise for biosignal modeling, many existing studies rely on increased model capacity, relaxed compute budgets, or large-scale pretraining.
-This makes it unclear whether SSL itself improves representation quality under realistic deployment constraints.
+  <p>This makes it unclear whether SSL itself improves representation quality under realistic deployment constraints.</p>
 
 ---
 
