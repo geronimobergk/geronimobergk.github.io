@@ -2,8 +2,8 @@
 layout: page
 title: Generative AI Reporting System for CFO Decision Support
 description: Controlled generation for executive reporting in regulated workflows.
-importance: 4
-category: work
+importance: 3
+category: professional
 ---
 
 **Role:** Managing Consultant, Data Science (Horvath)

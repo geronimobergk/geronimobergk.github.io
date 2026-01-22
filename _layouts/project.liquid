@@ -10,10 +10,18 @@ layout: default
 
 <div class="project project-page">
   <header class="project-header">
+    <a class="project-breadcrumb" href="{{ '/projects/' | relative_url }}">&larr; Projects</a>
     {% if page.description %}
-      <p class="project-description">{{ page.description }}</p>
+      <p class="project-kicker">{{ page.description }}</p>
     {% endif %}
-    <h3 class="project-title">{{ page.title }}</h3>
+    <h3 class="project-title project-title--page">{{ page.title }}</h3>
+    {% include project_actions.liquid %}
+    {% if page.large_img %}
+      {% assign hero_alt = page.img_alt | default: page.title %}
+      <div class="project-hero">
+        {% include figure.liquid loading="eager" path=page.large_img sizes="(min-width: 992px) 900px, 95vw" alt=hero_alt class="project-hero__image" caption=page.img_caption %}
+      </div>
+    {% endif %}
   </header>
 
   <article class="project-content">

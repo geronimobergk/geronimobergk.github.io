@@ -3,16 +3,23 @@ layout: project
 title: Self-Supervised Temporal Representation Learning for Energy-Efficient sEMG Gesture Decoding
 description: Resource-Constrained Machine Learning
 importance: 1
-img: assets/img/thumbnail/project/2026_ssl_msm_semg_gesture_decoding.jpeg
 category: research
 related_publications: false
 github: https://github.com/geronimobergk/tiny-ssl-semg
+# paper: https://...
+# pdf: assets/papers/...
+# demo: https://...
+img: assets/img/thumbnail/project/2026_ssl_msm_semg_gesture_decoding.jpeg
+# img_alt: SSL sEMG Gesutre Decoding
+# img_caption: Scheme of SSL sEMG Gesture Decoding
 ---
 
 <section class="project-summary">
   <h2>Summary</h2>
   <p>Self-supervised learning is expected to improve representation quality in tiny sEMG models without increasing deployment cost, enabling more robust cross-subject generalization and label-efficient adaptation under fixed system budgets.</p>
 </section>
+
+<div class="section-divider"></div>
 
 ## Motivation
 
@@ -46,14 +53,14 @@ compared to purely supervised training, while leaving deployment cost unchanged.
 
 <div class="about-columns project-columns">
   <section class="info-box">
-    <h3>Method</h3>
+    <h2>Method</h2>
     <p>The project is designed as a causally controlled study that isolates the role of representation learning.</p>
     <p>Encoder architecture, optimization budget, and inference cost are held constant across all experimental variants. Self-supervised learning is introduced as a single, explicit intervention via masked signal modeling during pretraining.</p>
     <p>Contrastive SSL is deliberately excluded due to its additional training dependencies, which could confound causal interpretation in resource-constrained settings.</p>
     <p>Representation quality is assessed using frozen encoders with linear probes and low-data adaptation scenarios, decoupling representational effects from classifier capacity or fine-tuning flexibility.</p>
   </section>
   <section class="info-box">
-    <h3>Evaluation</h3>
+    <h2>Evaluation</h2>
     <p>Evaluation emphasizes deployment realism over benchmark maximization:</p>
     <ul>
       <li>Leave-one-subject-out generalization to unseen users</li>
@@ -93,4 +100,4 @@ Planned outputs emphasize auditability and system relevance:
 - Explicit reporting of system metrics alongside task performance
 - ONNX export and post-training INT8 quantization analysis
 
-All components are designed with fully embedded deployment constraints in mind.
+All components are designed with embedded deployment constraints in mind.
