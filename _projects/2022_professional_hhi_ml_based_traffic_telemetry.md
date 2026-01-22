@@ -7,8 +7,6 @@ importance: 2
 category: work
 ---
 
----
-
 <p class="post-description">
   <strong>Role:</strong> Research Associate, Fraunhofer HHI<br>
   <strong>Focus of my contribution:</strong>Telemetry & data pipeline implementation, ML-based traffic forecasting model desgin, and integration into adaptive capacity control logic.<br>

@@ -4,7 +4,7 @@ title: Public Dataset Collection for ML-Based Quality-of-Transmission Estimation
 description: Reproducible QoT dataset for optical network research at scale.
 importance: 1
 img: assets/img/12.jpg
-category: work
+category: professional
 related_publications: true
 ---
 

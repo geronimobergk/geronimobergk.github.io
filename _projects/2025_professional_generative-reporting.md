@@ -45,4 +45,4 @@ Designed and implemented a generative reporting system integrated into existing 
 
 ## Outcome
 
-Achieved CFO-level buy-in and delivered a blueprint for broader rollout while preserving auditability and decision relevance.
+A blueprint for broader rollout that preserves auditability and decision relevance.
