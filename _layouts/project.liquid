@@ -8,28 +8,30 @@ layout: default
   </style>
 {% endif %}
 
-<div class="project project-page">
-  <header class="project-header">
-    <a class="project-breadcrumb" href="{{ '/projects/' | relative_url }}">&larr; Projects</a>
-    {% if page.description %}
-      <p class="project-kicker">{{ page.description }}</p>
+<div class="project-page">
+  <header class="project-page__header">
+    <a class="project-page__breadcrumb page-kicker" href="{{ '/projects/' | relative_url }}">&larr; Projects</a>
+    {% if page.kicker %}
+      <p class="project-page__kicker page-kicker">{{ page.kicker }}</p>
+    {% elsif page.summary == nil and page.description %}
+      <p class="project-page__kicker page-kicker">{{ page.description }}</p>
     {% endif %}
-    <h3 class="project-title project-title--page">{{ page.title }}</h3>
+    <h3 class="project-page__title page-title page-title--project">{{ page.title }}</h3>
     {% include project_actions.liquid %}
     {% if page.large_img %}
       {% assign hero_alt = page.img_alt | default: page.title %}
-      <div class="project-hero">
-        {% include figure.liquid loading="eager" path=page.large_img sizes="(min-width: 992px) 900px, 95vw" alt=hero_alt class="project-hero__image" caption=page.img_caption %}
+      <div class="project-page__hero">
+        {% include figure.liquid loading="eager" path=page.large_img sizes="(min-width: 992px) 900px, 95vw" alt=hero_alt class="project-page__hero-image" caption=page.img_caption %}
       </div>
     {% endif %}
   </header>
 
-  <article class="project-content">
+  <article class="project-page__content">
     {{ content }}
   </article>
 
   {% if page.related_publications %}
-    <h3 class="project-section-headline">References</h3>
+    <h3 class="project-page__section-title page-kicker">References</h3>
     <div class="publications">
       {% bibliography --cited_in_order %}
     </div>

@@ -11,6 +11,12 @@ Assume many users are academics with limited coding experience: explain in plain
 - Always reference **exact file paths** and show copy-pasteable snippets.
 - Explain **what changes** and **why it matters** in simple terms.
 
+## CSS naming rules
+
+- Use shared component classes with modifiers (e.g. `.page-title` + `.page-title--post`).
+- Scope page-specific styles under a page root class (e.g. `.project-page`) and use `__element` names.
+- Avoid introducing new global `project-*` classes unless they are reused across pages.
+
 ## Repo knowledge (high-signal)
 
 Common files:

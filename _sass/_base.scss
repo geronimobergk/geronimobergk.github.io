@@ -319,16 +319,14 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.post-header,
-.project-header {
+.post-header {
   margin-bottom: 1.5rem;
 }
 
+.page-kicker,
 .post-description,
-.project-kicker,
 .about-page .profile .profile-org,
 .principle-headline,
-.project-section-headline,
 .info-box h3,
 .card .card-body .card-text {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
@@ -792,8 +790,7 @@ footer.sticky-bottom {
   }
 }
 
-.post-title {
-  font-size: clamp(2.2rem, 3.6vw, 3.1rem);
+.page-title {
   font-weight: 600;
   letter-spacing: -0.015em;
   margin-bottom: 0.35rem;
@@ -801,6 +798,18 @@ footer.sticky-bottom {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
+}
+
+.page-title--post {
+  font-size: clamp(2.2rem, 3.6vw, 3.1rem);
+}
+
+.page-title--project {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.page-title--card {
+  font-size: clamp(1.1rem, 1.4vw, 1.35rem);
 }
 
 .about-body {
