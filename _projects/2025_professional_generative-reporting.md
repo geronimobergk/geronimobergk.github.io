@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Generative AI Reporting System for CFO Decision Support
 description: Controlled generation for executive reporting in regulated workflows.
 importance: 3

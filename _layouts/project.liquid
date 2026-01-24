@@ -10,10 +10,13 @@ layout: default
 
 <div class="project-page">
   <header class="project-page__header">
-    <a class="project-page__breadcrumb page-kicker" href="{{ '/projects/' | relative_url }}">&larr; Projects</a>
+    <!--
+      Project Page Breadcrumb
+      <a class="project-page__breadcrumb page-kicker" href="{{ '/projects/' | relative_url }}">&larr; Projects</a>
+    -->
     {% if page.kicker %}
       <p class="project-page__kicker page-kicker">{{ page.kicker }}</p>
-    {% elsif page.summary == nil and page.description %}
+    {% elsif page.summary == null and page.description %}
       <p class="project-page__kicker page-kicker">{{ page.description }}</p>
     {% endif %}
     <h3 class="project-page__title page-title page-title--project">{{ page.title }}</h3>
@@ -33,7 +36,7 @@ layout: default
   {% if page.related_publications %}
     <h3 class="project-page__section-title page-kicker">References</h3>
     <div class="publications">
-      {% bibliography --cited_in_order %}
+      {% bibliography --group_by none --cited_in_order %}
     </div>
   {% endif %}
 

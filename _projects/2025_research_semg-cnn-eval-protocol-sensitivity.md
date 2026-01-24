@@ -4,7 +4,7 @@ title: Evaluation Protocols Matter - Protocol Sensitivity in sEMG CNN Evaluation
 description: Methodologically Grounded Machine Learning
 importance: 2
 category: research
-img: assets/img/thumbnail/project/2025_semg-cnn-eval-protocol-sensitivity.png
+# img: assets/img/thumbnail/project/2025_semg-cnn-eval-protocol-sensitivity.png
 related_publications: false
 github: https://github.com/geronimobergk/semg-protocol-sensitivity
 ---

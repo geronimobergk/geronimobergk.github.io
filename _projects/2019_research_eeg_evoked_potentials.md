@@ -1,72 +1,64 @@
 ---
-layout: page
+layout: project
 title: Discriminatory Analysis of Source Dipoles in Somatosensory Evoked Potentials (EEG)
-description: Reliability of EEG source localization for early somatosensory processing
-img: assets/img/1.jpg
+description: EEG Source Localization Reliability
+# img: assets/img/thumbnail/project/2019_eeg_project.png
 importance: 3
-category: research
+category: foundational
 ---
 
-**Role:** Master’s Student
-**Status:** Completed
+<section class="project-summary">
+    <h2>Summary</h2>
+    <p>
+    This project shows that early somatosensory evoked potentials are temporally robust but spatially unreliable under standard EEG source localization.
+    While N20 and P37 components are detected consistently, their cortical source estimates vary widely across subjects and stimulation sites, especially for non-canonical finger stimulation.
+    These results demonstrate that commonly used EEG pipelines overstate spatial interpretability unless stronger modeling assumptions and experimental constraints are applied.
+    </p>
+</section>
 
-## Overview
-
-This project investigates how reliably early somatosensory evoked potentials (SSEPs) can be spatially localized using standard EEG source localization methods under realistic experimental conditions.
-
-While early SSEP components such as the N20 and P37 are temporally well characterized, the study examines whether their cortical generators can be **robustly and discriminably localized across different stimulus locations** using conventional EEG setups and generic head models.
-
----
+<div class="section-divider"></div>
 
 ## Motivation
 
-SSEPs are widely used in clinical neurophysiology and brain–computer interfacing to probe early cortical processing following peripheral nerve stimulation. Standard protocols assume that early components—most prominently the N20 (median nerve) and P37 (tibial nerve)—originate from distinct and localizable regions of the somatosensory cortex.
+Early SSEPs are widely used to probe first cortical processing in clinical neurophysiology and brain–computer interfacing. Components such as the N20 (median nerve) and P37 (tibial nerve) are often interpreted as originating from distinct and localizable regions of the primary somatosensory cortex.
 
-However, it remains unclear whether **standard EEG source localization pipelines can reliably distinguish first cortical processing across different limb and finger stimulations**, especially under realistic constraints such as limited electrode density, noise, and inter-subject variability. This uncertainty limits the interpretability of spatial EEG analyses in both research and clinical applications.
+However, it is unclear whether standard EEG source localization pipelines can robustly discriminate cortical generators across different peripheral stimulation sites, especially under realistic constraints such as limited electrode density, generic head models, noise, and inter-subject variability. This uncertainty directly affects the validity of spatial interpretations commonly made in EEG-based research and clinical practice.
 
----
+<div class="section-divider"></div>
 
-## Study Design (High Level)
+## Approach
 
-EEG data were recorded from **8 healthy participants** using a **64-channel EEG system** during controlled electrical stimulation of multiple peripheral sites, including the wrist, fingers, and foot.
+EEG data were recorded from 8 healthy participants using a 64-channel system during controlled electrical stimulation of multiple peripheral sites (wrist, fingers, foot).
+After preprocessing, artifact rejection, and trial averaging, scalp topographies at the N20 and P37 peaks were extracted.
 
-After preprocessing, artifact rejection, and trial averaging, spatial scalp patterns at the **N20 and P37 peaks** were extracted. Cortical sources were estimated using **dipole fitting with a boundary element head model (BEM)** combined with the **MUSIC algorithm**. The analysis focused on **temporal consistency, spatial variability, and anatomical plausibility** of the reconstructed dipoles across stimulus locations and subjects.
+Cortical sources were estimated using dipole fitting with a boundary element head model (BEM) combined with the MUSIC algorithm. The analysis deliberately prioritized:
 
-The study deliberately favored **methodological transparency and minimal manual intervention**, accepting reduced localization accuracy in order to expose real-world limitations of standard approaches.
+- minimal manual tuning,
+- generic (non-individualized) head models,
+- and reproducible, transparent processing steps.
 
----
+This design intentionally accepts reduced localization accuracy in order to expose the real-world limitations of standard EEG source localization workflows.
 
-## Evaluation Philosophy
-
-Evaluation emphasized **robustness and discriminability rather than optimal localization**:
-
-- Comparison of source estimates across different stimulation sites
-- Analysis of inter-subject variability and timing differences
-- Assessment of deviations from expected somatosensory cortex locations
-- Identification of failure modes under non-canonical stimulation conditions
-
-The objective was to clarify **when EEG source localization is trustworthy—and when it is not**.
-
----
+<div class="section-divider"></div>
 
 ## Key Findings
 
-The study demonstrates a clear gap between **robust temporal detection** and **reliable spatial localization** of early SSEPs:
+- Early SSEP components can be detected reliably in time using simple EEG setups, particularly for median and tibial nerve stimulation.
+- Spatial source estimates exhibit high inter-subject variability, even for canonical stimulation sites.
+- For finger (ulnar nerve) stimulation, reconstructed dipoles frequently deviate from expected somatosensory cortex locations.
+- Generic head models and standard clinical recommendations are insufficient for robust spatial discrimination of first cortical processing across stimulation sites.
 
-- Early SSEP components can be detected reliably with simple EEG setups, particularly for median and tibial nerve stimulation at canonical sites.
-- Source localization results show high inter-subject variability, with frequent deviations from expected cortical regions—especially for finger (ulnar nerve) stimulation.
-- Standard clinical recommendations and generic head models are insufficient for precise discrimination of first cortical processing across stimulus locations.
+<div class="section-divider"></div>
 
----
+## Implications & Limitations
 
-## Broader Implications
+These findings highlight a fundamental mismatch between temporal robustness and spatial reliability in EEG-based SSEP analysis. While early components are suitable for timing-based interpretations, their cortical generators cannot be assumed to be spatially precise without stronger modeling assumptions.
 
-The findings highlight fundamental limitations of dipole-based EEG source localization under realistic conditions. They underscore the need for improved experimental control, subject-specific or constrained head models, and more cautious interpretation of spatial EEG results in both clinical neurophysiology and BCI research.
+The study is limited by its use of generic head models and moderate sample size, but these constraints reflect typical experimental practice. As such, the results provide a realistic baseline and motivate the use of subject-specific modeling, constrained source priors, or complementary imaging modalities when spatial interpretation is critical.
 
-By explicitly identifying where standard methods fail, the project provides a grounded baseline for future work aiming at **spatially resolved and individualized neurotechnology applications**.
-
----
+<div class="section-divider"></div>
 
 ## Key Takeaway
 
-Early somatosensory responses are temporally robust but **spatially fragile** when analyzed with standard EEG source localization methods. Reliable interpretation of cortical generators requires stronger modeling assumptions and experimental constraints than are often acknowledged in practice.
+Early somatosensory responses are temporally robust but spatially fragile when analyzed with standard EEG source localization methods.
+Reliable interpretation of cortical generators requires substantially stronger experimental and modeling constraints than are commonly acknowledged.

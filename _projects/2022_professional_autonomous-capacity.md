@@ -1,16 +1,21 @@
 ---
-layout: page
+layout: project
 title: ML-Based Traffic Telemetry & Adaptive Capacity Control for Optical Access Networks
-description: Real-time telemetry, traffic forecasting, and uncertainty-aware capacity control for optical access and enterprise networks.
-img: assets/img/8.jpg
-importance: 3
+description: Telemetry-Driven, Uncertainty-Aware Network Control
+# img: assets/img/8.jpg
+importance: 1
 category: professional
+related_publications: true
 ---
 
-**Role:** Research Associate, Fraunhofer HHI
-**Focus:** Telemetry architecture, ML-based traffic forecasting, and integration into adaptive capacity control
+<section class="project-summary">
+  <h2>Summary</h2>
+  <p>
+    This project demonstrates that real-time traffic telemetry and uncertainty-aware ML forecasting can directly drive deployable capacity control in optical access networks. By predicting traffic maxima rather than averages and integrating forecasts into a closed-loop control system, the work achieves more than 75% capacity savings while keeping under-provisioning risk explicit and bounded. The result is a practically deployable telemetry–ML–control pipeline that replaces static safety margins with data-driven, adaptive decisions for F5G/6G networks.
+  </p>
+</section>
 
----
+<div class="section-divider"></div>
 
 ## Problem
 
@@ -24,7 +29,7 @@ This creates a fundamental dilemma for network operators:
 
 As traffic volatility and energy costs increase, future **F5G/6G access networks** require **autonomous, ML-assisted capacity control** — but only if it is grounded in realistic telemetry and uncertainty-aware decision logic.
 
----
+<div class="section-divider"></div>
 
 ## Approach
 
@@ -33,7 +38,7 @@ This project addressed adaptive capacity control as a **closed-loop system probl
 ### 1. Fine-grained telemetry
 
 - Designed and implemented a **telemetry pipeline** for real optical access and enterprise traffic.
-- Processed **minute-scale measurements** into structured features suitable for ML, explicitly preserving burstiness and short-term variability.
+- Processed **minute-scale measurements** into structured features suitable for ML, preserving burstiness and short-term variability.
 - Moved beyond hourly averages to expose the traffic characteristics that actually determine required capacity.
 
 ### 2. Forecasting traffic maxima (not means)
@@ -50,21 +55,19 @@ This project addressed adaptive capacity control as a **closed-loop system probl
 
 The resulting system operates in an **hourly closed-loop adjustment cycle**, combining telemetry, ML inference, and adaptive margin logic in a form suitable for real-world deployment.
 
----
+<div class="section-divider"></div>
 
 ## Outcome & Impact
 
 - **>75% average hourly capacity savings** compared to static provisioning on real enterprise traffic traces.
 - Demonstrated that **dynamic, ML-based safety margins** can substantially reduce overprovisioning while maintaining robustness to short-term traffic spikes.
-- Quantified the **residual risk** of under-provisioning (~0.45%), attributable to extreme, unpredictable traffic outliers.
+- Quantified the **residual risk of under-provisioning** (~0.45%), attributable to extreme, unpredictable traffic outliers.
 - Validated a **practically deployable telemetry–ML–control pipeline** as a building block for autonomous optical access networks.
 
 This work shifted capacity control from static planning toward **telemetry-driven, uncertainty-aware adaptation**, and provided experimental evidence that ML-based forecasting can inform **operational network decisions**, not just offline analysis.
 
----
+<div class="section-divider"></div>
 
-## Related Publications
-
-- _Demonstration of a Real-Time ML Pipeline for Traffic Forecasting in AI-Assisted F5G Optical Access Networks_
-- _Autonomous Capacity Adjustment with Dynamic Margin Allocation for Optical Enterprise Links_
-- _Traffic Monitoring and Analytics Framework for Optical Access Networks_
+{% quote Balanici:22 %}{% endquote %}
+{% quote balanici2024capacity %}{% endquote %}
+{% quote shariati2022trafficmonitoring %}{% endquote %}

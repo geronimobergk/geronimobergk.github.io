@@ -6,8 +6,8 @@ heading: Project Overview
 description: Selected research and system-oriented projects
 nav: true
 nav_order: 3
-display_categories: [research, professional]
-horizontal: false
+display_categories: [research, professional, foundational]
+horizontal: true
 ---
 
 <!-- pages/projects.md -->

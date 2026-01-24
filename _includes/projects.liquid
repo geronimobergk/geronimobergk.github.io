@@ -14,7 +14,7 @@
       <div class="card-body">
         {% if project.kicker %}
           <p class="project-card__kicker page-kicker">{{ project.kicker }}</p>
-        {% elsif project.summary == nil and project.description %}
+        {% elsif project.summary == null and project.description %}
           <p class="project-card__kicker page-kicker">{{ project.description }}</p>
         {% endif %}
         <h3 class="card-title page-title page-title--card project-card__title">{{ project.title }}</h3>

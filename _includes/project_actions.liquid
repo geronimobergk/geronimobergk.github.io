@@ -6,7 +6,14 @@
 {% if has_actions %}
   <div class="project-page__actions" aria-label="Project links">
     {% if page.github %}
-      <a class="project-page__action project-page__action--github" href="{{ page.github }}" target="_blank" rel="noopener noreferrer" aria-label="Code repository">Code</a>
+      <a
+        class="project-page__action project-page__action--github"
+        href="{{ page.github }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Code repository"
+        >Code</a
+      >
     {% endif %}
     {% if page.paper %}
       {% if page.paper contains '://' %}

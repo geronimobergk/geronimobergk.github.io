@@ -1,22 +1,35 @@
 ---
-layout: page
+layout: project
 title: Public Dataset Collection for ML-Based Quality-of-Transmission Estimation
 description: Reproducible QoT dataset for optical network research at scale.
-importance: 1
-img: assets/img/12.jpg
+importance: 2
+# img: assets/img/12.jpg
 category: professional
 related_publications: true
 ---
 
-**Role:** Research Assistant, Fraunhofer HHI
+<section class="project-summary">
+    <h2>Summary</h2>
+    <p>
+    This project delivers a **public, large-scale benchmark dataset for ML-based Quality-of-Transmission (QoT) estimation** in elastic optical networks.
+    Developed at Fraunhofer Heinrich Hertz Institute, the dataset comprises **1.2M+ labeled samples per scenario**, supports both **classification and regression** (BER, OSNR, SNR), and provides **lightpath-level and network-state views**.
+    By pairing realistic physical-layer simulation with transparent, feature-wise dataset analysis, the work enables **reproducible evaluation, fair model comparison, and data-aware benchmarking**—showing that dataset choice alone can dominate reported ML performance.
+    </p>
+</section>
+
+<div class="section-divider"></div>
 
 ### Problem
 
 Research on ML-based Quality of Transmission (QoT) estimation in optical networks was hindered by the absence of **shared, well-structured benchmark datasets**. Most published results relied on proprietary or insufficiently documented simulation data, making findings difficult to reproduce, compare, or validate across studies.
 
+<div class="section-divider"></div>
+
 ### Context
 
 Within the BMBF-funded project **AI-NET-PROTECT**, I addressed this bottleneck by creating a **public dataset foundation** for ML-assisted QoT estimation in elastic optical networks, enabling reproducible research and fair comparison of models across different assumptions and scenarios.
+
+<div class="section-divider"></div>
 
 ### System
 
@@ -28,6 +41,8 @@ Each dataset contains **more than 1.2 million labeled samples**, includes both c
 
 The datasets cover multiple network topologies, traffic profiles, and transceiver operation modes, while maintaining a consistent structure across scenarios.
 
+<div class="section-divider"></div>
+
 ### Constraints
 
 - Physical-layer realism via nonlinear channel modeling
@@ -36,9 +51,13 @@ The datasets cover multiple network topologies, traffic profiles, and transceive
 - Applicability to both lightpath-based and network-wide ML models
 - Dataset transparency and explainability beyond aggregate metrics
 
+<div class="section-divider"></div>
+
 ### Approach
 
 I designed and implemented the **full data generation and transformation pipeline**, from dynamic network simulation to ML-ready datasets. Beyond data generation, I introduced **visual, feature-wise dataset analysis methods** that expose class imbalance, feature bias, and dataset coverage—making dataset quality and limitations explicit before model training. This shifts evaluation from “model-centric” accuracy reporting to **data-aware benchmarking**.
+
+<div class="section-divider"></div>
 
 ### Outcome
 
