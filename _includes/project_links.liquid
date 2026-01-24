@@ -1,5 +1,8 @@
 {% assign item = include.item | default: page %}
-{% assign has_links = item.github or item.website or item.paper or item.pdf or item.demo or item.dataset or item.slides or item.video or item.doi %}
+{% assign has_links = false %}
+{% if item.github or item.website or item.paper or item.pdf or item.demo or item.dataset or item.slides or item.video or item.doi %}
+  {% assign has_links = true %}
+{% endif %}
 
 {% if has_links %}
   {% assign wrapper_class = include.wrapper_class | default: '' %}
