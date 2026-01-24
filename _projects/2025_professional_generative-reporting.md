@@ -46,10 +46,10 @@ Outputs were rendered as SAC dashboards, supporting both standardized monthly ma
 
 The system was designed under strict operational constraints:
 
-* Correctness over fluency: all outputs had to reconcile with source tables; stylistic freedom was intentionally limited
-* Controlled generation: templates, rule-based guards, and tool usage replaced open-ended prompting
-* Human-in-the-loop governance: the system produced *drafts only*; final release required human review and approval
-* Scope restriction: the agent was not allowed to introduce new KPIs, forecasts, or recommendations
+- Correctness over fluency: all outputs had to reconcile with source tables; stylistic freedom was intentionally limited
+- Controlled generation: templates, rule-based guards, and tool usage replaced open-ended prompting
+- Human-in-the-loop governance: the system produced _drafts only_; final release required human review and approval
+- Scope restriction: the agent was not allowed to introduce new KPIs, forecasts, or recommendations
 
 These choices reduced generative flexibility but ensured trustworthiness, interpretability, and compliance with existing finance workflows.
 
@@ -60,9 +60,9 @@ These choices reduced generative flexibility but ensured trustworthiness, interp
 The system was validated through dry-runs over multiple monthly close scenarios and a live SAC demonstration dashboard.
 Validation logic explicitly checked for failure modes such as:
 
-* mismatched totals and subtotals,
-* inconsistent percentages,
-* discrepancies between narrative statements and source figures.
+- mismatched totals and subtotals,
+- inconsistent percentages,
+- discrepancies between narrative statements and source figures.
 
 When validation failed, the system attempted automatic correction where possible or otherwise flagged outputs for human intervention.
 Empirical comparison against manually prepared reports demonstrated equivalent numerical accuracy with substantially reduced preparation effort, building stakeholder confidence despite the absence of formal quantitative KPIs.

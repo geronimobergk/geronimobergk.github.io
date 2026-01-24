@@ -6,7 +6,10 @@
 
 {% if has_links %}
   {% assign wrapper_class = include.wrapper_class | default: '' %}
-  <div class="project-links{% if wrapper_class != '' %} {{ wrapper_class }}{% endif %}" aria-label="{{ include.aria_label | default: 'Project links' }}">
+  <div
+    class="project-links{% if wrapper_class != '' %} {{ wrapper_class }}{% endif %}"
+    aria-label="{{ include.aria_label | default: 'Project links' }}"
+  >
     {% if item.github %}
       <a class="project-links__link" href="{{ item.github }}" target="_blank" rel="noopener noreferrer" aria-label="Code repository" title="Code">
         <i class="fa-brands fa-github" aria-hidden="true"></i>

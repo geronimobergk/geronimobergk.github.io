@@ -7,7 +7,6 @@ category: professional
 related_publications: true
 website: https://www.hhi.fraunhofer.de/en/pn-software/qot-dataset-collection.html
 paper: https://opg.optica.org/jocn/abstract.cfm?uri=jocn-14-3-43
-
 ---
 
 <section class="project-summary">
@@ -36,12 +35,12 @@ Within the BMBF-funded project AI-NET-PROTECT, this work addressed the dataset b
 
 ## System
 
-The project delivers a QoT dataset collection comprising four large-scale datasets, each generated from dynamic optical-network simulations using Fraunhofer HHI’s planning tool *PLATON* .
+The project delivers a QoT dataset collection comprising four large-scale datasets, each generated from dynamic optical-network simulations using Fraunhofer HHI’s planning tool _PLATON_ .
 
 Each dataset contains >1.2 million labeled samples and supports both classification and regression tasks with targets including BER, OSNR, and SNR. Two complementary data representations are provided:
 
-* Lightpath-level datasets for classical and deep ML models
-* Network-state datasets enabling network-wide QoT estimation
+- Lightpath-level datasets for classical and deep ML models
+- Network-state datasets enabling network-wide QoT estimation
 
 The datasets systematically vary network topology, traffic profile, and transceiver operation mode, while maintaining a consistent schema and comprehensive datasheets.
 
@@ -49,11 +48,11 @@ The datasets systematically vary network topology, traffic profile, and transcei
 
 ## Constraints
 
-* Physically grounded QoT labels via nonlinear channel modeling (Gaussian Noise (GN) model approximation)
-* Controlled variation of simulation assumptions to isolate dataset effects
-* Scalability to multi-million-sample datasets without manual labeling
-* Support for both lightpath-based and network-wide learning paradigms
-* Dataset transparency beyond aggregate performance metrics
+- Physically grounded QoT labels via nonlinear channel modeling (Gaussian Noise (GN) model approximation)
+- Controlled variation of simulation assumptions to isolate dataset effects
+- Scalability to multi-million-sample datasets without manual labeling
+- Support for both lightpath-based and network-wide learning paradigms
+- Dataset transparency beyond aggregate performance metrics
 
 <div class="section-divider"></div>
 
@@ -74,9 +73,9 @@ The result is a public QoT benchmark dataset collection that has since been reus
 
 The project establishes that:
 
-* dataset choice alone can dominate reported ML performance,
-* models trained on narrowly distributed datasets fail to generalize across scenarios,
-* transparent dataset analysis is essential for interpretable and deployable optical-network ML.
+- dataset choice alone can dominate reported ML performance,
+- models trained on narrowly distributed datasets fail to generalize across scenarios,
+- transparent dataset analysis is essential for interpretable and deployable optical-network ML.
 
 By combining open data, structured documentation, and visualization-driven analysis, this work enables reliable, comparable, and explainable ML research for optical network design and operation.
 
