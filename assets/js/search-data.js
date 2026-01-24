@@ -9,12 +9,26 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
           title: "Publications",
           description: "Peer-reviewed scholarly work",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "Selected research and system-oriented projects",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
@@ -32,49 +46,34 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-discriminatory-analysis-of-source-dipoles-in-somatosensory-evoked-potentials-eeg",
+          title: 'Discriminatory Analysis of Source Dipoles in Somatosensory Evoked Potentials (EEG)',
+          description: "EEG Source Localization Reliability",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/2019_research_eeg_evoked_potentials/";
+            },},{id: "projects-public-dataset-collection-for-ml-based-quality-of-transmission-estimation",
+          title: 'Public Dataset Collection for ML-Based Quality-of-Transmission Estimation',
+          description: "Data-Centric Benchmarking for Optical-Network Machine Learning",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/2021_professional_qot-dataset/";
+            },},{id: "projects-ml-based-traffic-telemetry-amp-adaptive-capacity-control-for-optical-access-networks",
+          title: 'ML-Based Traffic Telemetry &amp;amp; Adaptive Capacity Control for Optical Access Networks',
+          description: "Telemetry-Driven, Uncertainty-Aware Network Control",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/2022_professional_autonomous-capacity/";
+            },},{id: "projects-generative-ai-reporting-system-for-cfo-decision-support",
+          title: 'Generative AI Reporting System for CFO Decision Support',
+          description: "Auditable generative AI Systems",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+              window.location.href = "/projects/2025_professional_generative-reporting/";
+            },},{id: "projects-evaluation-protocols-matter-protocol-sensitivity-in-semg-cnn-evaluation",
+          title: 'Evaluation Protocols Matter - Protocol Sensitivity in sEMG CNN Evaluation',
+          description: "Methodologically Grounded Machine Learning",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+              window.location.href = "/projects/2025_research_semg-cnn-eval-protocol-sensitivity/";
+            },},{id: "projects-self-supervised-temporal-representation-learning-for-energy-efficient-semg-gesture-decoding",
+          title: 'Self-Supervised Temporal Representation Learning for Energy-Efficient sEMG Gesture Decoding',
+          description: "Resource-Constrained Machine Learning",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/2026_research_ssl_msm_semg_classifier/";
             },},];
