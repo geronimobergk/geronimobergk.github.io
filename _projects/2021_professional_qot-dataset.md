@@ -1,70 +1,85 @@
 ---
 layout: project
 title: Public Dataset Collection for ML-Based Quality-of-Transmission Estimation
-description: Reproducible QoT dataset for optical network research at scale.
+description: Data-Centric Benchmarking for Optical-Network Machine Learning
 importance: 2
-# img: assets/img/12.jpg
 category: professional
 related_publications: true
+website: https://www.hhi.fraunhofer.de/en/pn-software/qot-dataset-collection.html
+paper: https://opg.optica.org/jocn/abstract.cfm?uri=jocn-14-3-43
+
 ---
 
 <section class="project-summary">
-    <h2>Summary</h2>
-    <p>
-    This project delivers a **public, large-scale benchmark dataset for ML-based Quality-of-Transmission (QoT) estimation** in elastic optical networks.
-    Developed at Fraunhofer Heinrich Hertz Institute, the dataset comprises **1.2M+ labeled samples per scenario**, supports both **classification and regression** (BER, OSNR, SNR), and provides **lightpath-level and network-state views**.
-    By pairing realistic physical-layer simulation with transparent, feature-wise dataset analysis, the work enables **reproducible evaluation, fair model comparison, and data-aware benchmarking**—showing that dataset choice alone can dominate reported ML performance.
-    </p>
+  <h2>Summary</h2>
+  <p>
+    This project establishes a publicly available, large-scale dataset collection for machine-learning-based Quality-of-Transmission (QoT) estimation in elastic optical networks.
+    Generated from physically grounded, event-driven network simulations, the datasets enable reproducible benchmarking of QoT classification and regression models across heterogeneous network scenarios.
+    Beyond data release, the project introduces feature-wise and multi-categorical dataset visualizations that make dataset structure, bias, and coverage explicit.
+    A central result is that dataset design choices such as topology, traffic profile, and provisioning assumptions can dominate both apparent model performance and cross-dataset generalization, making data-centric evaluation a first-order concern in optical-network ML.
+  </p>
 </section>
 
 <div class="section-divider"></div>
 
-### Problem
+## Problem
 
-Research on ML-based Quality of Transmission (QoT) estimation in optical networks was hindered by the absence of **shared, well-structured benchmark datasets**. Most published results relied on proprietary or insufficiently documented simulation data, making findings difficult to reproduce, compare, or validate across studies.
-
-<div class="section-divider"></div>
-
-### Context
-
-Within the BMBF-funded project **AI-NET-PROTECT**, I addressed this bottleneck by creating a **public dataset foundation** for ML-assisted QoT estimation in elastic optical networks, enabling reproducible research and fair comparison of models across different assumptions and scenarios.
+Research on ML-based Quality-of-Transmission estimation has been fundamentally limited by the absence of shared, transparent benchmark datasets. Most prior work relies on proprietary or sparsely documented simulation data, preventing reproducibility, obscuring dataset bias, and making reported performance figures difficult to compare across studies.
 
 <div class="section-divider"></div>
 
-### System
+## Context
 
-A **large-scale QoT dataset collection** generated from realistic, event-driven optical network simulations using Fraunhofer HHI’s planning tool PLATON.
-Each dataset contains **more than 1.2 million labeled samples**, includes both classification and regression targets (BER, OSNR, SNR), and provides **two complementary data views**:
-
-- lightpath-level representations for classical ML models
-- network-state representations for network-wide learning approaches
-
-The datasets cover multiple network topologies, traffic profiles, and transceiver operation modes, while maintaining a consistent structure across scenarios.
+Within the BMBF-funded project AI-NET-PROTECT, this work addressed the dataset bottleneck by creating a public QoT dataset collection designed explicitly for benchmarking, comparison, and error analysis of ML-based QoT estimators under controlled yet realistic operating assumptions.
 
 <div class="section-divider"></div>
 
-### Constraints
+## System
 
-- Physical-layer realism via nonlinear channel modeling
-- Controlled variation of network scenarios to isolate dataset effects
-- Scalability to millions of samples without manual curation
-- Applicability to both lightpath-based and network-wide ML models
-- Dataset transparency and explainability beyond aggregate metrics
+The project delivers a QoT dataset collection comprising four large-scale datasets, each generated from dynamic optical-network simulations using Fraunhofer HHI’s planning tool *PLATON* .
 
-<div class="section-divider"></div>
+Each dataset contains >1.2 million labeled samples and supports both classification and regression tasks with targets including BER, OSNR, and SNR. Two complementary data representations are provided:
 
-### Approach
+* Lightpath-level datasets for classical and deep ML models
+* Network-state datasets enabling network-wide QoT estimation
 
-I designed and implemented the **full data generation and transformation pipeline**, from dynamic network simulation to ML-ready datasets. Beyond data generation, I introduced **visual, feature-wise dataset analysis methods** that expose class imbalance, feature bias, and dataset coverage—making dataset quality and limitations explicit before model training. This shifts evaluation from “model-centric” accuracy reporting to **data-aware benchmarking**.
+The datasets systematically vary network topology, traffic profile, and transceiver operation mode, while maintaining a consistent schema and comprehensive datasheets.
 
 <div class="section-divider"></div>
 
-### Outcome
+## Constraints
 
-A **publicly available QoT benchmark dataset collection** that is now used to evaluate ML models for QoT classification and regression under realistic operating conditions. The work establishes:
+* Physically grounded QoT labels via nonlinear channel modeling (Gaussian Noise (GN) model approximation)
+* Controlled variation of simulation assumptions to isolate dataset effects
+* Scalability to multi-million-sample datasets without manual labeling
+* Support for both lightpath-based and network-wide learning paradigms
+* Dataset transparency beyond aggregate performance metrics
 
-- reproducible baselines for ML-assisted QoT estimation
-- tools to assess dataset quality and comparability
-- evidence that dataset choice alone can dominate reported ML performance
+<div class="section-divider"></div>
 
-By enabling transparent dataset analysis and cross-dataset evaluation, this project helps the community move from isolated results toward **reliable, comparable, and explainable ML research in optical networking**.
+## Approach
+
+An end-to-end data generation pipeline was designed and implemented, covering dynamic network simulation, service provisioning, and transformation into ML-ready dataset representations.
+
+A central methodological element is the use of multi-categorical, feature-wise dataset visualizations, which enable qualitative assessment of dataset balance, coverage, and bias prior to model training.
+These visual analyses reveal how even minor changes in network assumptions can induce substantial shifts in data distributions—shifts that directly affect model behavior and cross-scenario generalization.
+
+Together, these methods shift QoT model evaluation from a purely model-centric perspective toward a data-aware benchmarking process.
+
+<div class="section-divider"></div>
+
+## Outcome
+
+The result is a public QoT benchmark dataset collection that has since been reused in multiple studies on network-wide QoT estimation, privacy-preserving learning, and cross-domain model transfer.
+
+The project establishes that:
+
+* dataset choice alone can dominate reported ML performance,
+* models trained on narrowly distributed datasets fail to generalize across scenarios,
+* transparent dataset analysis is essential for interpretable and deployable optical-network ML.
+
+By combining open data, structured documentation, and visualization-driven analysis, this work enables reliable, comparable, and explainable ML research for optical network design and operation.
+
+<div class="section-divider"></div>
+
+{% quote bergk2021mlassisted %}{% endquote %}

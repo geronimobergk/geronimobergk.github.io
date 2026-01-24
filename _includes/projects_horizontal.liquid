@@ -21,19 +21,7 @@
               <p class="project-card__summary">{{ project.description }}</p>
             {% endif %}
             <div class="row ml-1 mr-1 p-0">
-              {% if project.github %}
-                <div class="github-icon">
-                  <div class="icon" data-toggle="tooltip" title="Code Repository">
-                    <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-                  </div>
-                  {% if project.github_stars %}
-                    <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                      <i class="fa-solid fa-star"></i>
-                      <span id="{{ project.github_stars }}-stars"></span>
-                    </span>
-                  {% endif %}
-                </div>
-              {% endif %}
+              {% include project_links.liquid item=project wrapper_class="project-links--card" show_stars=true aria_label="Project links" %}
             </div>
           </div>
         </div>
