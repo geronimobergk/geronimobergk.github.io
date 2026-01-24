@@ -4,21 +4,21 @@ layout: default
 <div class="post about-page">
   <header class="post-header about-hero">
     <div class="post-heading">
-    {% if page.heading %}
-      <h1 class="post-title">{{ page.heading }}</h1>
-    {% else %}
-      <h1 class="post-title">
-        {% if site.title == 'blank' %}
-          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-          {{ site.last_name }}
-        {% else %}
-          {{ site.title }}
-        {% endif %}
-      </h1>
-    {% endif %}
+      {% if page.heading %}
+        <h1 class="page-title page-title--post">{{ page.heading }}</h1>
+      {% else %}
+        <h1 class="page-title page-title--post">
+          {% if site.title == 'blank' %}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+            {{ site.last_name }}
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+      {% endif %}
     </div>
-    {% if page.subtitle %}
-      <p class="tagline">{{ page.subtitle }}</p>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
     {% endif %}
   </header>
 

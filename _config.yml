@@ -91,7 +91,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Engineering Notes # blog_name will be displayed in your blog page
-blog_description: Practical write-ups on tools, systems, and programming.
+blog_description: Practical write-ups on tools, systems, and programming
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -131,12 +131,12 @@ external_sources:
   - name: medium.com
     rss_url: https://medium.com/@geronimobergk/feed
     categories: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+  # - name: Google Blog
+  #   posts:
+  #     - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+  #       published_date: 2024-05-14
+  #   categories: [external-posts]
+  #   tags: [google]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -197,8 +197,6 @@ exclude:
   - package-lock.json
   - _pages/about_einstein.md
   - _pages/books.md
-  - _pages/blog.md # TODO
-  - _pages/projects.md # TODO
   - _pages/teaching.md # TODO
   - _pages/cv.md
   - _pages/dropdown.md

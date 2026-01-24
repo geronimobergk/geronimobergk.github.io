@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="project-page">
+  <header class="project-page__header">
+    <!--
+      Project Page Breadcrumb
+      <a class="project-page__breadcrumb page-kicker" href="{{ '/projects/' | relative_url }}">&larr; Projects</a>
+    -->
+    {% if page.kicker %}
+      <p class="project-page__kicker page-kicker">{{ page.kicker }}</p>
+    {% elsif page.summary == null and page.description %}
+      <p class="project-page__kicker page-kicker">{{ page.description }}</p>
+    {% endif %}
+    <h3 class="project-page__title page-title page-title--project">{{ page.title }}</h3>
+    {% include project_actions.liquid %}
+    {% if page.large_img %}
+      {% assign hero_alt = page.img_alt | default: page.title %}
+      <div class="project-page__hero">
+        {% include figure.liquid loading="eager" path=page.large_img sizes="(min-width: 992px) 900px, 95vw" alt=hero_alt class="project-page__hero-image" caption=page.img_caption %}
+      </div>
+    {% endif %}
+  </header>
+
+  <article class="project-page__content">
+    {{ content }}
+  </article>
+
+  {% if page.related_publications %}
+    <h2 class="project-page__section-title">Related Publications</h2>
+    <div class="publications">
+      {% bibliography --group_by none --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>

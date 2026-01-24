@@ -1,0 +1,105 @@
+{% assign item = include.item | default: page %}
+{% assign has_links = false %}
+{% if item.github or item.website or item.paper or item.pdf or item.demo or item.dataset or item.slides or item.video or item.doi %}
+  {% assign has_links = true %}
+{% endif %}
+
+{% if has_links %}
+  {% assign wrapper_class = include.wrapper_class | default: '' %}
+  <div
+    class="project-links{% if wrapper_class != '' %} {{ wrapper_class }}{% endif %}"
+    aria-label="{{ include.aria_label | default: 'Project links' }}"
+  >
+    {% if item.github %}
+      <a class="project-links__link" href="{{ item.github }}" target="_blank" rel="noopener noreferrer" aria-label="Code repository" title="Code">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+      {% if include.show_stars and item.github_stars %}
+        <span class="project-links__stars" data-toggle="tooltip" title="GitHub Stars">
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <span id="{{ item.github_stars }}-stars"></span>
+        </span>
+      {% endif %}
+    {% endif %}
+    {% if item.website %}
+      {% if item.website contains '://' %}
+        {% assign website_href = item.website %}
+      {% else %}
+        {% assign website_href = item.website | relative_url %}
+      {% endif %}
+      <a class="project-links__link" href="{{ website_href }}" target="_blank" rel="noopener noreferrer" aria-label="Project website" title="Website">
+        <i class="fa-solid fa-globe" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+    {% if item.paper %}
+      {% if item.paper contains '://' %}
+        {% assign paper_href = item.paper %}
+      {% else %}
+        {% assign paper_href = item.paper | relative_url %}
+      {% endif %}
+      <a class="project-links__link" href="{{ paper_href }}" target="_blank" rel="noopener noreferrer" aria-label="Project paper" title="Paper">
+        <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+    {% if item.pdf %}
+      {% if item.pdf contains '://' %}
+        {% assign pdf_href = item.pdf %}
+      {% else %}
+        {% assign pdf_href = item.pdf | relative_url %}
+      {% endif %}
+      <a class="project-links__link" href="{{ pdf_href }}" target="_blank" rel="noopener noreferrer" aria-label="Project PDF" title="PDF">
+        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+    {% if item.demo %}
+      {% if item.demo contains '://' %}
+        {% assign demo_href = item.demo %}
+      {% else %}
+        {% assign demo_href = item.demo | relative_url %}
+      {% endif %}
+      <a class="project-links__link" href="{{ demo_href }}" target="_blank" rel="noopener noreferrer" aria-label="Project demo" title="Demo">
+        <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+    {% if item.dataset %}
+      {% if item.dataset contains '://' %}
+        {% assign dataset_href = item.dataset %}
+      {% else %}
+        {% assign dataset_href = item.dataset | relative_url %}
+      {% endif %}
+      <a class="project-links__link" href="{{ dataset_href }}" target="_blank" rel="noopener noreferrer" aria-label="Project dataset" title="Dataset">
+        <i class="fa-solid fa-database" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+    {% if item.slides %}
+      {% if item.slides contains '://' %}
+        {% assign slides_href = item.slides %}
+      {% else %}
+        {% assign slides_href = item.slides | relative_url %}
+      {% endif %}
+      <a class="project-links__link" href="{{ slides_href }}" target="_blank" rel="noopener noreferrer" aria-label="Project slides" title="Slides">
+        <i class="fa-solid fa-file-powerpoint" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+    {% if item.video %}
+      {% if item.video contains '://' %}
+        {% assign video_href = item.video %}
+      {% else %}
+        {% assign video_href = item.video | relative_url %}
+      {% endif %}
+      <a class="project-links__link" href="{{ video_href }}" target="_blank" rel="noopener noreferrer" aria-label="Project video" title="Video">
+        <i class="fa-solid fa-video" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+    {% if item.doi %}
+      {% if item.doi contains '://' %}
+        {% assign doi_href = item.doi %}
+      {% else %}
+        {% assign doi_href = 'https://doi.org/' | append: item.doi %}
+      {% endif %}
+      <a class="project-links__link" href="{{ doi_href }}" target="_blank" rel="noopener noreferrer" aria-label="Project DOI" title="DOI">
+        <i class="fa-solid fa-link" aria-hidden="true"></i>
+      </a>
+    {% endif %}
+  </div>
+{% endif %}

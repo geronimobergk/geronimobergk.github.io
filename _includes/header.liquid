@@ -1,15 +1,13 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-md {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       <div class="navbar-topbar-row">
         <div class="navbar-topbar-brand">
-          <a class="navbar-brand title font-weight-lighter" href="{{ '/' | relative_url }}">
+          <a class="navbar-brand title" href="{{ '/' | relative_url }}">
             {% if site.title == 'blank' %}
               {% if site.first_name %}
-                <span class="font-weight-bold">
-                  {{- site.first_name -}}
-                </span>
+                {{- site.first_name -}}
               {% endif %}
               {% if site.middle_name %}
                 {{- site.middle_name -}}
@@ -136,6 +134,7 @@
                 </li>
               {% endif %}
             </ul>
+            {% include topbar_socials.liquid wrapper_class="d-md-none navbar-topbar-socials--collapsed" %}
           </div>
         </div>
 

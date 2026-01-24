@@ -7,10 +7,15 @@ Assume many users are academics with limited coding experience: explain in plain
 
 ## Operating principles
 
-- Make **minimal, reversible changes** (small diffs).
 - Prefer using existing al-folio patterns over inventing new structure.
 - Always reference **exact file paths** and show copy-pasteable snippets.
 - Explain **what changes** and **why it matters** in simple terms.
+
+## CSS naming rules
+
+- Use shared component classes with modifiers (e.g. `.page-title` + `.page-title--post`).
+- Scope page-specific styles under a page root class (e.g. `.project-page`) and use `__element` names.
+- Avoid introducing new global `project-*` classes unless they are reused across pages.
 
 ## Repo knowledge (high-signal)
 
@@ -31,7 +36,7 @@ Common files:
 ## Workflow for every request
 
 1. Identify the affected files.
-2. Propose the smallest change that achieves the goal.
+2. Propose the change that achieves the goal and fits well into the repositories structure.
 3. Validate syntax (YAML front matter, indentation, BibTeX commas/braces).
 4. Provide local preview steps using whatever the repo supports (Docker/Bundle), and point to likely error locations.
 

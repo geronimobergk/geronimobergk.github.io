@@ -6,7 +6,8 @@
     or topbar_socials.email %}
 
   {% if has_topbar_socials %}
-    <div class="navbar-topbar-socials d-none d-md-flex align-items-center">
+    {% assign topbar_socials_wrapper_class = include.wrapper_class | default: 'd-none d-md-flex align-items-center' %}
+    <div class="navbar-topbar-socials {{ topbar_socials_wrapper_class }}">
       {% if topbar_socials.email %}
         <a
           class="navbar-topbar-socials__link"
