@@ -6,6 +6,7 @@ description: Telemetry-Driven, Uncertainty-Aware Network Control
 importance: 1
 category: professional
 related_publications: true
+paper: https://opg.optica.org/abstract.cfm?uri=OFC-2024-M1H.2
 ---
 
 <section class="project-summary">
@@ -67,6 +68,6 @@ This work shifted capacity control from static planning toward telemetry-driven,
 
 <div class="section-divider"></div>
 
-{% quote Balanici:22 %}{% endquote %}
 {% quote balanici2024capacity %}{% endquote %}
+{% quote Balanici:22 %}{% endquote %}
 {% quote shariati2022trafficmonitoring %}{% endquote %}

@@ -773,18 +773,22 @@ footer.sticky-bottom {
 
 .tag-category-list {
   border-bottom: 1px solid var(--global-divider-color);
-  text-align: center;
-  padding-top: 1rem;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   ul {
-    justify-content: center;
-    display: flow-root;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
 
     p,
     li {
       list-style: none;
-      display: inline-block;
-      padding: 1rem 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      margin: 0;
+      padding: 0.35rem 0.4rem;
       color: var(--global-text-color-light);
     }
   }
@@ -951,6 +955,10 @@ footer.sticky-bottom {
     list-style: none;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    .page-title--post {
+      font-size: clamp(1rem, 2vw, 2rem);
+    }
 
     .post-meta {
       color: var(--global-text-color-light);

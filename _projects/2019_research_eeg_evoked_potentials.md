@@ -5,6 +5,7 @@ description: EEG Source Localization Reliability
 # img: assets/img/thumbnail/project/2019_eeg_project.png
 importance: 3
 category: foundational
+paper: https://drive.google.com/file/d/1MpHq6x37TToGyEHhvd8BrqYUVHEGyJJ9/view?usp=sharing
 ---
 
 <section class="project-summary">
