@@ -8,7 +8,7 @@
           </div>
         {% endif %}
         <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
-          <div class="card-body">
+          <div class="card-body project-card__body">
             {% if project.kicker %}
               <p class="project-card__kicker page-kicker">{{ project.kicker }}</p>
             {% elsif project.summary == null and project.description %}
@@ -20,7 +20,7 @@
             {% elsif project.kicker and project.description %}
               <p class="project-card__summary">{{ project.description }}</p>
             {% endif %}
-            <div class="row ml-1 mr-1 p-0">
+            <div class="project-card__links">
               {% include project_links.liquid item=project wrapper_class="project-links--card" show_stars=true aria_label="Project links" %}
             </div>
           </div>

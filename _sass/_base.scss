@@ -288,7 +288,6 @@ ul.task-list input[type="checkbox"] {
 
 .page-kicker,
 .post-description,
-.info-box h3,
 .card .card-body .card-text {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
@@ -766,7 +765,7 @@ footer.sticky-bottom {
 }
 
 .page-title--post {
-  font-size: clamp(2.2rem, 3.6vw, 3.1rem);
+  font-size: clamp(1.5rem, 3.6vw, 2.5rem);
 }
 
 .page-title--project {
@@ -801,7 +800,8 @@ footer.sticky-bottom {
   gap: 0.6rem;
   text-align: left;
 
-  h3 {
+  h3,
+  h2 {
     margin: 0;
   }
 
@@ -814,7 +814,7 @@ footer.sticky-bottom {
   }
 
   li {
-    margin: 0.35rem 0;
+    margin: 0 0 0.35rem;
     line-height: 1.55;
     padding-left: 1.4rem;
     position: relative;
@@ -826,30 +826,6 @@ footer.sticky-bottom {
     left: 0;
     top: 0.05em;
     color: var(--global-text-color-light);
-  }
-}
-
-.education-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-
-  li {
-    display: flex;
-    flex-direction: column;
-
-    strong {
-      font-size: 1.05rem;
-      letter-spacing: 0.02em;
-    }
-
-    span {
-      font-size: 0.95rem;
-      color: var(--global-text-color-light);
-    }
   }
 }
 
@@ -865,7 +841,7 @@ footer.sticky-bottom {
     padding-bottom: 2rem;
 
     .page-title--post {
-      font-size: clamp(1rem, 2vw, 2rem);
+      font-size: clamp(1rem, 2vw, 1.5rem);
     }
 
     .post-meta {
