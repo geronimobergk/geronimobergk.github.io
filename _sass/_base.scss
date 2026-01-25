@@ -262,44 +262,6 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.about-page .profile.card {
-  background-color: var(--global-card-bg-color);
-  border: 0.5px solid var(--global-divider-color);
-  border-radius: 5px;
-  padding: 1.3rem 1.3rem 1.3rem;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  margin: 1.1rem auto 1.5rem clamp(1rem, 1.5rem, 2rem);
-}
-
-.about-page .profile.card img {
-  box-shadow: none !important;
-  border: 0 !important;
-  max-width: 70%;
-  height: auto;
-}
-
-.about-page .profile .profile-role,
-.about-page .profile .profile-org {
-  display: block;
-}
-
-.about-page .profile .profile-role {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.15;
-  color: var(--global-text-color);
-}
-
-.about-page .profile .profile-divider {
-  display: block;
-  width: 50px;
-  margin: 0.45rem auto;
-  border-top: 1px solid var(--global-divider-color);
-}
-
 .profile.float-right {
   margin-left: 1rem;
 }
@@ -326,8 +288,6 @@ ul.task-list input[type="checkbox"] {
 
 .page-kicker,
 .post-description,
-.about-page .profile .profile-org,
-.principle-headline,
 .info-box h3,
 .card .card-body .card-text {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
@@ -815,45 +775,6 @@ footer.sticky-bottom {
 
 .page-title--card {
   font-size: clamp(1.1rem, 1.4vw, 1.35rem);
-}
-
-.about-body {
-  max-width: 900px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.about-body > p:first-of-type {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.about-body h2 {
-  @extend %project-section-heading;
-}
-
-.about-body h2:first-child {
-  margin-top: 0;
-}
-
-.principle-statement {
-  margin: 2rem 0;
-  padding: 1rem 0;
-  display: flow-root;
-  border-top: 1px solid var(--global-divider-color);
-  border-bottom: 1px solid var(--global-divider-color);
-  font-size: clamp(1rem, 2.6vw, 1.3rem);
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  color: var(--global-text-color);
-
-  p {
-    margin: 0;
-  }
-
-  p + p {
-    margin-top: 0.5rem;
-  }
 }
 
 .two-columns {
