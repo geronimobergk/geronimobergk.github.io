@@ -262,43 +262,6 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.about-page .profile.card {
-  background-color: var(--global-card-bg-color);
-  border: 0.5px solid var(--global-divider-color);
-  border-radius: 5px;
-  padding: 1.3rem 1.3rem 1.3rem;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
-
-.about-page .profile.card img {
-  box-shadow: none !important;
-  border: 0 !important;
-  max-width: 80%;
-  height: auto;
-}
-
-.about-page .profile .profile-role,
-.about-page .profile .profile-org {
-  display: block;
-}
-
-.about-page .profile .profile-role {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.15;
-  color: var(--global-text-color);
-}
-
-.about-page .profile .profile-divider {
-  display: block;
-  width: 50px;
-  margin: 0.45rem auto;
-  border-top: 1px solid var(--global-divider-color);
-}
-
 .profile.float-right {
   margin-left: 1rem;
 }
@@ -325,9 +288,6 @@ ul.task-list input[type="checkbox"] {
 
 .page-kicker,
 .post-description,
-.about-page .profile .profile-org,
-.principle-headline,
-.info-box h3,
 .card .card-body .card-text {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
@@ -805,7 +765,7 @@ footer.sticky-bottom {
 }
 
 .page-title--post {
-  font-size: clamp(2.2rem, 3.6vw, 3.1rem);
+  font-size: clamp(1.5rem, 3.6vw, 2.5rem);
 }
 
 .page-title--project {
@@ -816,90 +776,17 @@ footer.sticky-bottom {
   font-size: clamp(1.1rem, 1.4vw, 1.35rem);
 }
 
-.about-body {
-  max-width: 900px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.about-body > p:first-of-type {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.principle-statement {
-  margin: 2rem 0;
-  padding: 1rem 0;
-  display: flow-root;
-  border-top: 1px solid var(--global-divider-color);
-  border-bottom: 1px solid var(--global-divider-color);
-  font-size: clamp(1rem, 2.6vw, 1.3rem);
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  color: var(--global-text-color);
-
-  p {
-    margin: 0;
-  }
-
-  p + p {
-    margin-top: 0.5rem;
-  }
-}
-
-.about-listings {
-  max-width: 860px;
-  margin: 2rem auto;
-  padding: 1rem 1rem;
-  text-align: left;
-}
-
-.about-columns {
+.two-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2.25rem 3rem;
-  margin-bottom: 2.5rem;
-}
-
-.about-columns .info-box {
-  margin: 0;
-}
-
-.about-listings .info-box {
-  padding: 0.25rem 0;
+  margin: 2.5rem 0;
 }
 
 @media (max-width: 900px) {
-  .about-listings {
-    max-width: 100%;
-  }
-
-  .about-columns {
+  .two-columns {
     grid-template-columns: 1fr;
   }
-}
-
-.about-listings ul,
-.about-listings ol {
-  margin: 0;
-  padding-left: 0;
-  text-align: left;
-  list-style: none;
-}
-
-.about-listings li {
-  margin: 0.35rem 0;
-  line-height: 1.55;
-  padding-left: 1.4rem;
-  position: relative;
-}
-
-.about-listings li::before {
-  content: "\2013";
-  position: absolute;
-  left: 0;
-  top: 0.05em;
-  color: var(--global-text-color-light);
 }
 
 .info-box {
@@ -911,37 +798,34 @@ footer.sticky-bottom {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  text-align: left;
 
-  h3 {
+  h3,
+  h2 {
     margin: 0;
   }
 
-  ul {
+  ul,
+  ol {
     margin: 0;
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
   }
-}
-
-.education-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
 
   li {
-    display: flex;
-    flex-direction: column;
+    margin: 0 0 0.35rem;
+    line-height: 1.55;
+    padding-left: 1.4rem;
+    position: relative;
+  }
 
-    strong {
-      font-size: 1.05rem;
-      letter-spacing: 0.02em;
-    }
-
-    span {
-      font-size: 0.95rem;
-      color: var(--global-text-color-light);
-    }
+  li::before {
+    content: "\2013";
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    color: var(--global-text-color-light);
   }
 }
 
@@ -957,7 +841,7 @@ footer.sticky-bottom {
     padding-bottom: 2rem;
 
     .page-title--post {
-      font-size: clamp(1rem, 2vw, 2rem);
+      font-size: clamp(1rem, 2vw, 1.5rem);
     }
 
     .post-meta {

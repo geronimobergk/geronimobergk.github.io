@@ -47,7 +47,7 @@ Observed ranking changes are therefore attributable to protocol-induced generali
 
 <div class="section-divider"></div>
 
-<div class="about-columns project-columns">
+<div class="two-columns">
   <section class="info-box">
     <h2>Method</h2>
     <p>The project is designed as a controlled diagnostic study that isolates evaluation protocol as the sole explanatory variable. Two spatio-temporal CNN architectures (a baseline model and an attention-augmented variant) are evaluated under identical capacity, training budgets, optimization schedules, and preprocessing. No protocol-specific hyperparameter tuning is performed.
