@@ -269,12 +269,13 @@ ul.task-list input[type="checkbox"] {
   padding: 1.3rem 1.3rem 1.3rem;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   text-align: center;
+  margin: 1.1rem auto 1.5rem clamp(1rem, 1.5rem, 2rem);
 }
 
 .about-page .profile.card img {
   box-shadow: none !important;
   border: 0 !important;
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -847,59 +848,17 @@ footer.sticky-bottom {
   }
 }
 
-.about-listings {
-  max-width: 860px;
-  margin: 2rem auto;
-  padding: 1rem 1rem;
-  text-align: left;
-}
-
-.about-columns {
+.two-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2.25rem 3rem;
-  margin-bottom: 2.5rem;
-}
-
-.about-columns .info-box {
-  margin: 0;
-}
-
-.about-listings .info-box {
-  padding: 0.25rem 0;
+  margin: 2.5rem 0;
 }
 
 @media (max-width: 900px) {
-  .about-listings {
-    max-width: 100%;
-  }
-
-  .about-columns {
+  .two-columns {
     grid-template-columns: 1fr;
   }
-}
-
-.about-listings ul,
-.about-listings ol {
-  margin: 0;
-  padding-left: 0;
-  text-align: left;
-  list-style: none;
-}
-
-.about-listings li {
-  margin: 0.35rem 0;
-  line-height: 1.55;
-  padding-left: 1.4rem;
-  position: relative;
-}
-
-.about-listings li::before {
-  content: "\2013";
-  position: absolute;
-  left: 0;
-  top: 0.05em;
-  color: var(--global-text-color-light);
 }
 
 .info-box {
@@ -911,13 +870,33 @@ footer.sticky-bottom {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  text-align: left;
 
   h3 {
     margin: 0;
   }
 
-  ul {
+  ul,
+  ol {
     margin: 0;
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
+  }
+
+  li {
+    margin: 0.35rem 0;
+    line-height: 1.55;
+    padding-left: 1.4rem;
+    position: relative;
+  }
+
+  li::before {
+    content: "\2013";
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    color: var(--global-text-color-light);
   }
 }
 

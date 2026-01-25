@@ -51,7 +51,7 @@ compared to purely supervised training, while leaving deployment cost unchanged.
 
 <div class="section-divider"></div>
 
-<div class="about-columns project-columns">
+<div class="two-columns">
   <section class="info-box">
     <h2>Method</h2>
     <p>The project is designed as a causally controlled study that isolates the role of representation learning.</p>
