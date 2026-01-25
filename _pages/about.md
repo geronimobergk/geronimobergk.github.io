@@ -47,7 +47,7 @@ This work resulted in seven peer-reviewed publications at leading venues and was
 
 <div class="two-columns">
   <section class="info-box">
-    <h3>Research interests</h3>
+    <h2>Research interests</h2>
     <ul>
       <li>Resource-aware and energy-efficient machine learning for embedded and edge systems</li>
       <li>Edge AI and TinyML for embedded sensing systems</li>
@@ -59,7 +59,7 @@ This work resulted in seven peer-reviewed publications at leading venues and was
     </ul>
   </section>
   <section class="info-box">
-    <h3>Industry practice</h3>
+    <h2>Industry practice</h2>
     <ul>
       <li>Design and deployment of data-driven decision systems in finance and operations under strict reliability, auditability, and governance requirements</li>
       <li>Large-scale forecasting and simulation pipelines operating under uncertainty, incomplete data, and real-time constraints</li>
@@ -70,7 +70,7 @@ This work resulted in seven peer-reviewed publications at leading venues and was
 </div>
 
 <section class="info-box">
-  <h3>Education</h3>
+  <h2>Education</h2>
   <ul class="education-list">
     <li>
       M.Sc. Electrical Engineering, 2021

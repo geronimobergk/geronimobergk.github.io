@@ -828,6 +828,14 @@ footer.sticky-bottom {
   text-justify: inter-word;
 }
 
+.about-body h2 {
+  @extend %project-section-heading;
+}
+
+.about-body h2:first-child {
+  margin-top: 0;
+}
+
 .principle-statement {
   margin: 2rem 0;
   padding: 1rem 0;
