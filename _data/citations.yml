@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-01-17'
+  last_updated: '2026-01-26'
 papers:
   4W2FjFYAAAAJ:2osOgNQ5qMEC:
-    citations: 37
+    citations: 38
     title: 'ML-assisted QoT estimation: a dataset collection and data visualization for dataset quality evaluation'
     year: '2021'
   4W2FjFYAAAAJ:9yKSN-GCB0IC:
@@ -30,7 +30,7 @@ papers:
     title: "Einkauf\u2013Optimierung entlang des Einkaufsprozesses mit KI und Daten"
     year: '2025'
   4W2FjFYAAAAJ:d1gkVwhDpl0C:
-    citations: 30
+    citations: 31
     title: Deep convolutional neural network for network-wide QoT estimation
     year: '2021'
   4W2FjFYAAAAJ:u-x6o8ySG0sC:
