@@ -22,7 +22,7 @@ pagination:
 {% assign blog_description = site.blog_description | default: page.description %}
 
 <header class="post-header">
-  <h1 class="page-title page-title--post">{{ blog_title }}</h1>
+  <h1 class="page-title">{{ blog_title }}</h1>
   {% if blog_description and blog_description != "" %}
     <p class="post-description">{{ blog_description }}</p>
   {% endif %}
