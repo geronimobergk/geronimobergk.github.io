@@ -32,7 +32,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I work on machine learning systems that must operate under hard real-world constraints, such as limited energy, data, and compute, while remaining reliable and scientifically meaningful in deployment.
+I work on machine learning systems that remain reliable under real-world constraints such as limited data, energy, and resources.
 My focus is translating learning algorithms into deployable systems, where robustness, evaluation rigor, and system integration matter more than peak benchmark performance.
 
 I am currently a Managing Consultant in Data Science at Horváth AG, where I design and deploy data-driven decision systems in large-scale enterprise environments.

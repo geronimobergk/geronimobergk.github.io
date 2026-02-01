@@ -12,6 +12,7 @@ github: https://github.com/geronimobergk/tiny-ssl-semg
 # img: assets/img/thumbnail/project/2026_ssl_msm_semg_gesture_decoding.jpeg
 # img_alt: SSL sEMG Gesutre Decoding
 # img_caption: Scheme of SSL sEMG Gesture Decoding
+# large_img: assets/img/thumbnail/project/2026_ssl_msm_semg_gesture_decoding.jpeg
 ---
 
 <section class="project-summary">
@@ -99,5 +100,3 @@ Planned outputs emphasize auditability and system relevance:
 - Concise technical report documenting design decisions and observed trends
 - Explicit reporting of system metrics alongside task performance
 - ONNX export and post-training INT8 quantization analysis
-
-All components are designed with embedded deployment constraints in mind.
