@@ -2,8 +2,8 @@
 layout: about
 title: About
 permalink: /
-heading: Designing Reliable AI Systems Under Real World Constraints
-description: For decision, communication, and sensing applications
+heading: Designing Reliable Intelligent Systems Under Real World Constraints
+description: Across sensing, learning, and interaction
 selected_papers: false
 social: false
 profile:
@@ -16,7 +16,7 @@ profile:
     <p>
       <span class="profile-role">Geronimo Bergk</span>
       <span class="profile-divider"></span>
-      <span class="profile-org">Applied Machine Learning And Edge AI Systems</span>
+      <span class="profile-org">Intelligent Sensing & Machine Learning</span>
     </p>
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -32,13 +32,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I work on machine learning systems that remain reliable under real-world constraints such as limited data, energy, and resources.
-My focus is translating learning algorithms into deployable systems, where robustness, evaluation rigor, and system integration matter more than peak benchmark performance.
+I want to develop intelligent systems that can perceive and understand physical signals and adapt to real-world conditions. I am interested in the intersection of sensing, signal processing, and machine learning, particularly in how intelligent systems can remain robust, efficient, and reliable outside controlled laboratory settings.
 
-I am currently a Managing Consultant in Data Science at Horváth AG, where I design and deploy data-driven decision systems in large-scale enterprise environments.
-Previously, I was a Research Associate at the Fraunhofer Heinrich Hertz Institute, working on machine-learning-based forecasting, telemetry, and control for communication systems under operational constraints.
-There, I developed reproducible simulation tools and large-scale datasets for optical networks, integrated learning components into real-time system demonstrators, and contributed to benchmark-driven evaluation pipelines.
-This work resulted in seven peer-reviewed publications at leading venues and was recognized with the Fraunhofer HHI Emerging Scientist Award for an outstanding master’s thesis.
+I am a PhD student in Computer Science at ETH Zürich, based at [Empa](https://www.empa.ch) and supervised by Prof. Christian Holz ([SIPLAB](https://siplab.org)). My research focuses on robust physiological monitoring from wearable sensors, combining multimodal sensing, signal processing, and machine learning with controlled experiments and field studies. I study how sensing quality, algorithms, and system constraints shape reliable inference of human physiological state, with the goal of building monitoring systems that remain reliable beyond the lab.
+
+Before my PhD, I was Managing Consultant in Data Science & AI at Horváth, an international management consultancy, where I developed data-driven decision systems for large organizations. Previously, as a Research Associate at Fraunhofer HHI, I worked on machine learning, forecasting, telemetry, and control for communication systems under operational constraints. This work resulted in seven peer-reviewed publications and the Fraunhofer HHI Emerging Scientist Award for an outstanding master's thesis.
 
 <section class="principle-statement">
   <p class="principle-headline">Engineering principle</p>
@@ -49,22 +47,26 @@ This work resulted in seven peer-reviewed publications at leading venues and was
   <section class="info-box">
     <h2>Research interests</h2>
     <ul>
-      <li>Resource-aware and energy-efficient machine learning for embedded and edge systems</li>
-      <li>Edge AI and TinyML for embedded sensing systems</li>
-      <li>Representation learning under fixed deployment constraints (energy, memory, data)</li>
-      <li>Evaluation protocols, robustness, and reproducibility in real-world ML systems</li>
-      <li>Human-centered sensing with wearables and physiological signals (e.g., biosignals)</li>
-      <li>Edge intelligence for communication-constrained and wireless sensing systems</li>
-      <li>Edge–cloud co-design for long-term, large-scale monitoring applications</li>
+      <li>
+        Multimodal physiological sensing and signal analysis for robust inference of human state, health, and performance
+      </li>
+      <li>
+        Machine learning and signal processing for multimodal, noisy, and time-varying sensor data
+      </li>
+      <li>
+        Robustness, generalization, and experimental evaluation of intelligent sensing systems across users, conditions, and environments
+      </li>
+      <li>
+        Hardware-aware machine learning and Edge AI for resource-constrained sensing platforms, considering computation, energy, latency, and on-device inference
+      </li>
     </ul>
   </section>
   <section class="info-box">
     <h2>Industry practice</h2>
     <ul>
-      <li>Design and deployment of data-driven decision systems in finance and operations under strict reliability, auditability, and governance requirements</li>
-      <li>Large-scale forecasting and simulation pipelines operating under uncertainty, incomplete data, and real-time constraints</li>
-      <li>Generative-AI–based reporting systems for executive decision-making, with emphasis on interpretability, traceability, and failure modes</li>
-      <li>Machine learning systems with strong requirements on robustness, interpretability, and organizational accountability</li>
+      <li>Design and deployment of data-driven decision systems under strict reliability, auditability, and governance constraints</li>
+      <li>Large-scale forecasting and simulation systems operating under uncertainty, incomplete data, and real-time constraints</li>
+      <li>Applied AI and machine learning systems with strong requirements on robustness, interpretability, and organizational accountability</li>
     </ul>
   </section>
 </div>
@@ -73,11 +75,15 @@ This work resulted in seven peer-reviewed publications at leading venues and was
   <h2>Education</h2>
   <ul class="education-list">
     <li>
-      M.Sc. Electrical Engineering, 2021
+      Ph.D. in Computer Science, 2026 - present
+      <span>ETH Zürich</span>
+    </li>
+    <li>
+      M.Sc. in Electrical Engineering, 2021
       <span>Technische Universität Berlin</span>
     </li>
     <li>
-      B.Sc. Electrical Engineering, 2017
+      B.Sc. in Electrical Engineering, 2017
       <span>Technische Universität Berlin</span>
     </li>
   </ul>
